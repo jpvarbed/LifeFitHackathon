@@ -98,6 +98,8 @@
     <Compile Include="Blank.xaml.cs">
       <DependentUpon>Blank.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controller\LifeStyleDescriptionController.cs" />
+    <Compile Include="Controller\MainPageController.cs" />
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -190,9 +192,7 @@
       <Private>True</Private>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

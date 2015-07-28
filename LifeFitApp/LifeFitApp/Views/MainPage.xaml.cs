@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LifeFitApp.Controller;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,6 +26,14 @@ namespace LifeFitApp
         public MainPage()
         {
             this.InitializeComponent();
+            this.InitMainPage();
         }
+
+        private void InitMainPage()
+        {
+            MainPageController mainPageController = new MainPageController();
+
+        }
+
     }
 }
