@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <lifestylesDB>
-	<Lifestylelist>
+	<section1>
 		<Lifestylelist>
 			<ID>1</ID>
 			<nameLifestyle>Athlete</nameLifestyle>
@@ -15,8 +15,8 @@
 			<imageMain>PATH</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 		</Lifestylelist>
-	</Lifestylelist>
-	<Lifelist>
+	</section1>
+	<section2>
 		<Lifelist>
 			<ID>L1</ID>
 			<nameLifelist>Dunk like Dennis</nameLifelist>
@@ -53,8 +53,8 @@
 			<exercise>W1;W3;W6</exercise>
 			<description>Don't let you nose be your tell</description>
 		</Lifelist>
-	</Lifelist>
-	<meals>
+	</section2>
+	<section3>
 		<meals>
 			<ID>M1</ID>
 			<nameMeal>Tuna Cakes</nameMeal>
@@ -70,8 +70,8 @@
 			<carbs>0</carbs>
 			<protien>200</protien>
 		</meals>
-	</meals>
-	<workouts>
+	</section3>
+	<section4>
 		<workouts>
 			<ID>W1</ID>
 			<nameWorkout>Running</nameWorkout>
@@ -105,5 +105,5 @@
 			<imageMain>PATH</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 		</workouts>
-	</workouts>
+	</section4>
 </lifestylesDB>
