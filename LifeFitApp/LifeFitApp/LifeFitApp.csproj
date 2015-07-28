@@ -97,6 +97,7 @@
     </Compile>
     <Compile Include="Controller\LifeStyleDescriptionController.cs" />
     <Compile Include="Controller\MainPageController.cs" />
+    <Compile Include="Model\Model.cs" />
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
