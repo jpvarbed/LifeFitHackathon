@@ -8,6 +8,22 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Rectangle Fill="#FFF4F4F5" Height="77" Stroke="Black" VerticalAlignment="Top" Margin="0,-2,0,0" d:LayoutOverrides="LeftMargin, RightMargin"/>
+        <TextBlock x:Name="GenreTitleBox" Height="47" Margin="65,24,70,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe UI Historic" FontSize="32">
+        	<Run FontFamily="Nirmala UI Semilight" Text="Genre Select"/>
+        	<LineBreak/>
+        	<Run FontFamily="Nirmala UI Semilight" Text=" "/>
+        	<LineBreak/>
+        	<Run FontFamily="Nirmala UI Semilight"/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+        <Button x:Name="BackButton" Content="Button" Height="32" Margin="10,27,0,0" VerticalAlignment="Top" Width="36" d:LayoutOverrides="LeftMargin, RightMargin"/>
+        <ListView x:Name="listView" Margin="10,80,43,10" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition">
+            <ListBox x:Name="listBox" Height="2" Width="13"/>
+        </ListView>
 
     </Grid>
 </Page>
