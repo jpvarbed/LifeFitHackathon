@@ -8,9 +8,36 @@ namespace LifeFitApp.Model
     public class LifeStyle : baseObj
     {
         public List<LifeList> lifeLists;
+        public string lists;
         public LifeStyle(string name, XmlReader reader)
         {
             this.typeName = name;
+            ParseData(name, reader);
+        }
+
+        public void ParseOtherData(XmlReader reader)
+        {
+            bool end = false;
+            do
+            {
+                switch (reader.NodeType)
+                {
+                    case XmlNodeType.EndElement:
+                        if (reader.Name == this.typeName)
+                        {
+                            end = true;
+                        }
+                        break;
+                    case XmlNodeType.Text:
+                        switch (reader.Name)
+                        {
+                            case "lifelistDB":
+                                this.lists = reader.Value;
+                                break;
+                        }
+                        break;
+                }
+            } while (reader.Read() && !end);
         }
     }
 
@@ -18,17 +45,62 @@ namespace LifeFitApp.Model
     {
         public MealPlan mealPlan;
         public ExercisePlan exercisePlan;
+        public string mealList;
+        public string exerciseList;
+        public LifeList(string name, XmlReader reader)
+        {
+            this.typeName = name;
+            ParseData(name, reader);
+        }
+
+        public void ParseOtherData(XmlReader reader)
+        {
+            bool end = false;
+            do
+            {
+                switch (reader.NodeType)
+                {
+                    case XmlNodeType.EndElement:
+                        if (reader.Name == this.typeName)
+                        {
+                            end = true;
+                        }
+                        break;
+                    case XmlNodeType.Text:
+                        switch (reader.Name)
+                        {
+                            case "meals":
+                                this.mealList = reader.Value;
+                                break;
+                            case "exercise":
+                                this.exerciseList = reader.Value;
+                                break;
+                        }
+                        break;
+                }
+            } while (reader.Read() && !end);
+        }
     }
 
     public class MealPlan : baseObj
     {
         public List<Meal> meals;
+        public MealPlan(string name, XmlReader reader)
+        {
+            this.typeName = name;
+            ParseData(name, reader);
+        }
     }
 
 
     public class ExercisePlan : baseObj
     {
         public List<Exercise> exercises;
+        public ExercisePlan(string name, XmlReader reader)
+        {
+            this.typeName = name;
+            ParseData(name, reader);
+        }
     }
 
     public class Meal : ActivityItem
@@ -38,11 +110,23 @@ namespace LifeFitApp.Model
         public int protein;
         public string ingredients;
         public List<ActivityQualifier> dietaryRestrictions;
+
+        public Meal(string name, XmlReader reader)
+        {
+            this.typeName = name;
+            ParseData(name, reader);
+        }
     }
 
     public class Exercise : ActivityItem
     {
         public ActivityQualifier exerciseType;
+
+        public Exercise(string name, XmlReader reader)
+        {
+            this.typeName = name;
+            ParseData(name, reader);
+        }
     }
 
     public class ActivityQualifier : baseObj
@@ -69,19 +153,40 @@ namespace LifeFitApp.Model
         public string name;
         public LifeImage image;
         public string typeName;
-        public void ParseData(XmlReader reader)
+        string imageMain;
+        string imageThumb;
+        public virtual void ParseOtherData(XmlReader reader) { }
+        public void ParseData(string type, XmlReader reader)
         {
             bool end = false;
             do
             {
                 switch (reader.NodeType)
                 {
-                    case XmlNodeType.Text:
-                        break;
                     case XmlNodeType.EndElement:
-                        if (reader.Name == "Lifestylelist")
+                        if (reader.Name == "type")
                         {
                             end = true;
+                        }
+                        break;
+                    case XmlNodeType.Text:
+                        switch (reader.Name)
+                        {
+                            case "ID":
+                                this.guid = reader.Value;
+                                break;
+                            case "nameLifestyle":
+                                this.name = reader.Value;
+                                break;
+                            case "imageMain":
+                                imageMain = reader.Value;
+                                break;
+                            case "imageThumbnail":
+                                imageThumb = reader.Value;
+                                break;
+                            default:
+                                ParseOtherData(reader);
+                                break;
                         }
                         break;
                 }
@@ -91,14 +196,16 @@ namespace LifeFitApp.Model
 
     public class LifeImage
     {
-        public LifeImage(string path)
+        public LifeImage(string mainPath, string thumbnailPath)
         {
-            this.filePath = path;
+            this.filePath = mainPath;
+            this.thumbnailPath = thumbnailPath;
             //this.image = Image(path, true);
         }
         //public Image imageMain;
         //public Image thumbnail;
         private string filePath;
+        private string thumbnailPath;
     }
 
     public class DataModel
@@ -295,10 +402,16 @@ namespace LifeFitApp.Model
                                     objectMap.Add(style.guid, style);
                                     break;
                                 case "LifeList":
+                                    LifeList list = new LifeList("Lifelist", reader);
+                                    objectMap.Add(list.guid, list);
                                     break;
                                 case "meals":
+                                    Meal meal = new Meal("meals", reader);
+                                    objectMap.Add(meal.guid, meal);
                                     break;
                                 case "workouts":
+                                    Exercise exercise = new Exercise("workouts", reader);
+                                    objectMap.Add(exercise.guid, exercise);
                                     break;
                             }
                         break;
@@ -311,6 +424,11 @@ namespace LifeFitApp.Model
 
     public class Model
     {
+        public Model()
+        {
+            DataModel model = new DataModel();
+            model.import();
+        }
         public List<LifeStyle> lifeStyles;
     }
 }
