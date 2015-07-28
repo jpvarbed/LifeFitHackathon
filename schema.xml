@@ -18,7 +18,7 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="ID" type="xs:string"/>
-                            <xs:element name="nameLifestyle" type="xs:string"/>
+                            <xs:element name="name" type="xs:string"/>
 							<xs:element name="lifelistDB" type="xs:string"/>
                             <xs:element name="imageMain" type="xs:string"/>
 							<xs:element name="imageThumbnail" type="xs:string"/>
@@ -35,7 +35,7 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="ID" type="xs:string"/>
-                            <xs:element name="nameLifelist" type="xs:string"/>
+                            <xs:element name="name" type="xs:string"/>
                             <xs:element name="mealTime" type="xs:decimal"/>
                             <xs:element name="workoutTime" type="xs:decimal"/>    
                             <xs:element name="imageMain" type="xs:string"/>
@@ -57,7 +57,7 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="ID" type="xs:string"/>
-                            <xs:element name="nameMeal" type="xs:string"/>
+                            <xs:element name="name" type="xs:string"/>
                             <xs:element name="description" type="xs:string"/>
                             <xs:element name="ingredients" type="xs:string"/>    
                             <xs:element name="percentLike" type="xs:decimal"/>
@@ -83,7 +83,7 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="ID" type="xs:string"/>
-                            <xs:element name="nameWorkout" type="xs:string"/>
+                            <xs:element name="name" type="xs:string"/>
                             <xs:element name="description" type="xs:string"/>
                             <xs:element name="type" type="xs:string"/>    
                             <xs:element name="percentLike" type="xs:decimal"/>
