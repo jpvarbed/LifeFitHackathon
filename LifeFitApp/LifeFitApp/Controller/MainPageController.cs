@@ -8,14 +8,21 @@ namespace LifeFitApp.Controller
 {
     class MainPageController
     {
-        string currentPlan;
-        string currentView;
-        int dayOfWeek;
+        public string currentPlan;
+        public string currentView;
+        public int dayOfWeek;
         List<string> meals;
         List<string> workouts;
 
         public MainPageController()
         {
+
+        }
+
+        public void UpdateModel()
+        {
+            dayOfWeek = 2;
+
 
         }
     }
