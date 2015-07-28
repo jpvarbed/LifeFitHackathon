@@ -23,6 +23,7 @@ namespace LifeFitApp
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private MainPageController mainPageController;
         public MainPage()
         {
             this.InitializeComponent();
@@ -31,8 +32,13 @@ namespace LifeFitApp
 
         private void InitMainPage()
         {
-            MainPageController mainPageController = new MainPageController();
+            mainPageController = new MainPageController();
 
+        }
+
+        public void tapAction()
+        {
+            mainPageController.UpdateModel();
         }
 
     }
