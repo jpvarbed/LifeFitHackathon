@@ -3,49 +3,49 @@
 	<section1>
 		<Lifestylelist>
 			<ID>1</ID>
-			<nameLifestyle>Athlete</nameLifestyle>
+			<name>Athlete</name>
 			<lifelistDB>L1;L2</lifelistDB>
 			<imageMain>PATH</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 		</Lifestylelist>
 		<Lifestylelist>
 			<ID>2</ID>
-			<nameLifestyle>Getting Married</nameLifestyle>
+			<name>Getting Married</name>
 			<lifelistDB>L3;L4</lifelistDB>
 			<imageMain>PATH</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 		</Lifestylelist>
 		<Lifestylelist>
 			<ID>3</ID>
-			<nameLifestyle>Beginner</nameLifestyle>
+			<name>Beginner</name>
 			<lifelistDB>L3;L2</lifelistDB>
 			<imageMain>PATH</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 		</Lifestylelist>
 		<Lifestylelist>
 			<ID>4</ID>
-			<nameLifestyle>Celebrity</nameLifestyle>
+			<name>Celebrity</name>
 			<lifelistDB>L4;L2</lifelistDB>
 			<imageMain>PATH</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 		</Lifestylelist>
 		<Lifestylelist>
 			<ID>5</ID>
-			<nameLifestyle>Beach &amp; Summer</nameLifestyle>
+			<name>Beach &amp; Summer</name>
 			<lifelistDB>L1;L1</lifelistDB>
 			<imageMain>PATH</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 		</Lifestylelist>
 		<Lifestylelist>
 			<ID>6</ID>
-			<nameLifestyle>Hoops and Dunks</nameLifestyle>
+			<name>Hoops and Dunks</name>
 			<lifelistDB>L1;L3</lifelistDB>
 			<imageMain>PATH</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 		</Lifestylelist>
 		<Lifestylelist>
 			<ID>7</ID>
-			<nameLifestyle>Crossfit</nameLifestyle>
+			<name>Crossfit</name>
 			<lifelistDB>L2;L3</lifelistDB>
 			<imageMain>PATH</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
@@ -54,7 +54,7 @@
 	<section2>
 		<Lifelist>
 			<ID>L1</ID>
-			<nameLifelist>Dunk like Dennis</nameLifelist>
+			<name>Dunk like Dennis</name>
 			<mealTime>0</mealTime>
 			<workoutTime>0</workoutTime>
 			<imageMain>images\lifelists\dunklikedennis.jpg</imageMain>
@@ -66,7 +66,7 @@
 		</Lifelist>
 		<Lifelist>
 			<ID>L2</ID>
-			<nameLifelist>Run like Forest</nameLifelist>
+			<name>Run like Forest</name>
 			<mealTime>0</mealTime>
 			<workoutTime>0</workoutTime>
 			<imageMain>images\lifelists\runforestrun.jpg</imageMain>
@@ -78,7 +78,7 @@
 		</Lifelist>
 		<Lifelist>
 			<ID>L3</ID>
-			<nameLifelist>Fuck like Pinoccio</nameLifelist>
+			<name>Fuck like Pinoccio</name>
 			<mealTime>0</mealTime>
 			<workoutTime>0</workoutTime>
 			<imageMain>images\lifelists\pinocchio.jpg</imageMain>
@@ -90,7 +90,7 @@
 		</Lifelist>
 		<Lifelist>
 			<ID>L4</ID>
-			<nameLifelist>Triatholon Prep</nameLifelist>
+			<name>Triatholon Prep</name>
 			<mealTime>0</mealTime>
 			<workoutTime>0</workoutTime>
 			<imageMain>PATH</imageMain>
@@ -104,7 +104,7 @@
 	<section3>
 		<meals>
 			<ID>M1</ID>
-			<nameMeal>Tuna Cakes</nameMeal>
+			<name>Tuna Cakes</name>
 			<description>Tuna cakes will help you gain muscle and shed fat</description>
 			<ingredients>3 oz Tuna; 1 Egg; 1 Tbls Coconut Oil; 1 Green Onion</ingredients>
 			<percentLike>0</percentLike>
@@ -120,7 +120,7 @@
 		</meals>
 		<meals>
 			<ID>M2</ID>
-			<nameMeal>Chickpea Salad Sandwich</nameMeal>
+			<name>Chickpea Salad Sandwich</name>
 			<description>The mashed chickpeas create a texture very similar to flaked chicken and the sauce gets a boost from a creamy eggless mayonnaise. I’ve also added a hefty amount of crunchy vegetables like celery, green onion, pickles, and bell peppers to give it a great crunch and loads of fibre. Serve this salad in pieces of Boston or Bibb lettuce, in a wrap or sandwich, or on crackers. If you have a picnic or road trip in store you’ll be happy to know that it packs well. 
 </description>
 			<ingredients>1 (15-ounce) can chickpeas, drained and rinsed;2 stalks celery, finely chopped;3 green onions, thinly sliced; 1/4 cup finely chopped dill pickle;1/4 cup  finely chopped red bell pepper;3 tablespoons mayonnaise;1 clove garlic, minced;1 1/2 tsp yellow mustard;2 tsp minced fresh dill;1 1/2 tsp fresh lemon juice;1/4 tsp fine-grain sea salt;Freshly ground black pepper
@@ -143,7 +143,7 @@ Tip: If you’d like a soy-free version of this salad, be sure to use soy-free v
 		</meals>
 		<meals>
 			<ID>M3</ID>
-			<nameMeal>Moroccan Chicken</nameMeal>
+			<name>Moroccan Chicken</name>
 			<description>Slow Cooker Moroccan Chicken with Chopped Almonds, Apricots and Cauliflower “Couscous”</description>
 			<ingredients>For the Chicken;
 2 tablespoons extra-virgin olive oil;
@@ -192,7 +192,7 @@ Step 5: Garnish the chicken with toasted, sliced almonds and fresh cilantro. Ser
 		</meals>
 		<meals>
 			<ID>M4</ID>
-			<nameMeal>Mexican Eggs Benedict</nameMeal>
+			<name>Mexican Eggs Benedict</name>
 			<description/>
 			<ingredients>2 dried chipotle chilies; 3 large egg yolks;2 tsp lime juice;2/3 cup salted clarified butter or ghee, melted;8 large eggs, poached;1 Tbsp extra-virgin olive oil;8 cups baby spinach;1 avocado slices;fresh cilantro</ingredients>
 			<percentLike>0</percentLike>
@@ -212,7 +212,7 @@ Serve with avocado, fried plantains, cilantro,</instructions>
 	<section4>
 		<workouts>
 			<ID>W1</ID>
-			<nameWorkout>Running</nameWorkout>
+			<name>Running</name>
 			<description>Run your ass off</description>
 			<type>Aerobic</type>
 			<percentLike>0.1</percentLike>
@@ -223,7 +223,7 @@ Serve with avocado, fried plantains, cilantro,</instructions>
 		</workouts>
 		<workouts>
 			<ID>W2</ID>
-			<nameWorkout>Yoga like a pro</nameWorkout>
+			<name>Yoga like a pro</name>
 			<description>Sweat out that water weight</description>
 			<type>Weight control</type>
 			<percentLike>0.9</percentLike>
@@ -234,7 +234,7 @@ Serve with avocado, fried plantains, cilantro,</instructions>
 		</workouts>
 		<workouts>
 			<ID>W3</ID>
-			<nameWorkout>Cum on man</nameWorkout>
+			<name>Cum on man</name>
 			<description>What do you think</description>
 			<type>Anaerobic</type>
 			<percentLike>0.8</percentLike>
