@@ -15,6 +15,41 @@
 			<imageMain>PATH</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 		</Lifestylelist>
+		<Lifestylelist>
+			<ID>3</ID>
+			<nameLifestyle>Beginner</nameLifestyle>
+			<lifelistDB>L1;L2</lifelistDB>
+			<imageMain>PATH</imageMain>
+			<imageThumbnail>PATH</imageThumbnail>
+		</Lifestylelist>
+		<Lifestylelist>
+			<ID>4</ID>
+			<nameLifestyle>Celebrity</nameLifestyle>
+			<lifelistDB>L1;L2</lifelistDB>
+			<imageMain>PATH</imageMain>
+			<imageThumbnail>PATH</imageThumbnail>
+		</Lifestylelist>
+		<Lifestylelist>
+			<ID>5</ID>
+			<nameLifestyle>Beach &amp; Summer</nameLifestyle>
+			<lifelistDB>L1;L2</lifelistDB>
+			<imageMain>PATH</imageMain>
+			<imageThumbnail>PATH</imageThumbnail>
+		</Lifestylelist>
+		<Lifestylelist>
+			<ID>6</ID>
+			<nameLifestyle>Hoops and Dunks</nameLifestyle>
+			<lifelistDB>L1;L2</lifelistDB>
+			<imageMain>PATH</imageMain>
+			<imageThumbnail>PATH</imageThumbnail>
+		</Lifestylelist>
+		<Lifestylelist>
+			<ID>7</ID>
+			<nameLifestyle>Crossfit</nameLifestyle>
+			<lifelistDB>L1;L2</lifelistDB>
+			<imageMain>PATH</imageMain>
+			<imageThumbnail>PATH</imageThumbnail>
+		</Lifestylelist>
 	</section1>
 	<section2>
 		<Lifelist>
@@ -34,7 +69,7 @@
 			<nameLifelist>Run like Forest</nameLifelist>
 			<mealTime>0</mealTime>
 			<workoutTime>0</workoutTime>
-			<imageMain>PATH</imageMain>
+			<imageMain>images\lifelists\runforestrun.jpg</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 			<followers>0</followers>
 			<meals>M3;M4;M5</meals>
@@ -46,7 +81,7 @@
 			<nameLifelist>Fuck like Pinoccio</nameLifelist>
 			<mealTime>0</mealTime>
 			<workoutTime>0</workoutTime>
-			<imageMain>PATH</imageMain>
+			<imageMain>images\lifelists\pinocchio.jpg</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 			<followers>0</followers>
 			<meals>M1;M4;M6</meals>
@@ -61,7 +96,7 @@
 			<description>Tuna cakes will help you gain muscle and shed fat</description>
 			<ingredients>3 oz Tuna; 1 Egg; 1 Tbls Coconut Oil; 1 Green Onion</ingredients>
 			<percentLike>0</percentLike>
-			<imageMain>PATH</imageMain>
+			<imageMain>images\meals\tunacakes.jpg</imageMain>
 			<mealTime>20</mealTime>
 			<instructions>Step 1:  Drain the tuna and mix the tuna and egg together in a bowl; Step 2: Chop up the green onion and mix in the tuna; Step 3:  Add coconut oil to a pan on medium-high heat.    Smush the tuna into a flat cake like size and once the oil is hot cook; Step 4: After 3 minutes or once the bottom is fairly brown, flip the tuna cake and cook for 3 more minutes</instructions>
 			<imageThumbnail>PATH</imageThumbnail>
@@ -91,7 +126,7 @@
 			<percentLike>0.9</percentLike>
 			<exerciseTime>60</exerciseTime>
 			<instructions>Power Yoga</instructions>
-			<imageMain>PATH</imageMain>
+			<imageMain>images\workouts\yoga.jpg</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 		</workouts>
 		<workouts>
@@ -102,8 +137,41 @@
 			<percentLike>0.8</percentLike>
 			<exerciseTime>90</exerciseTime>
 			<instructions>Jerking off</instructions>
-			<imageMain>PATH</imageMain>
+			<imageMain>images\workouts\wink.jpg</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
+		</workouts>
+		<workouts>
+			<ID>W4</ID>
+			<nameWorkout/>
+			<description/>
+			<type/>
+			<percentLike/>
+			<exerciseTime/>
+			<instructions/>
+			<imageMain/>
+			<imageThumbnail/>
+		</workouts>
+		<workouts>
+			<ID>W5</ID>
+			<nameWorkout/>
+			<description/>
+			<type/>
+			<percentLike/>
+			<exerciseTime/>
+			<instructions/>
+			<imageMain/>
+			<imageThumbnail/>
+		</workouts>
+		<workouts>
+			<ID>W6</ID>
+			<nameWorkout/>
+			<description/>
+			<type/>
+			<percentLike/>
+			<exerciseTime/>
+			<instructions/>
+			<imageMain/>
+			<imageThumbnail/>
 		</workouts>
 	</section4>
 </lifestylesDB>
