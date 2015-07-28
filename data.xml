@@ -88,6 +88,18 @@
 			<exercise>W1;W3;W6</exercise>
 			<description>Don't let you nose be your tell</description>
 		</Lifelist>
+		<Lifelist>
+			<ID>L4</ID>
+			<nameLifelist>Triatholon Prep</nameLifelist>
+			<mealTime>0</mealTime>
+			<workoutTime>0</workoutTime>
+			<imageMain>PATH</imageMain>
+			<imageThumbnail>PATH</imageThumbnail>
+			<followers>0</followers>
+			<meals>M1;M4;M6</meals>
+			<exercise>W1;W3;W6</exercise>
+			<description>Don't let you nose be your tell</description>
+		</Lifelist>
 	</section2>
 	<section3>
 		<meals>
@@ -139,39 +151,6 @@
 			<instructions>Jerking off</instructions>
 			<imageMain>images\workouts\wink.jpg</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
-		</workouts>
-		<workouts>
-			<ID>W4</ID>
-			<nameWorkout/>
-			<description/>
-			<type/>
-			<percentLike/>
-			<exerciseTime/>
-			<instructions/>
-			<imageMain/>
-			<imageThumbnail/>
-		</workouts>
-		<workouts>
-			<ID>W5</ID>
-			<nameWorkout/>
-			<description/>
-			<type/>
-			<percentLike/>
-			<exerciseTime/>
-			<instructions/>
-			<imageMain/>
-			<imageThumbnail/>
-		</workouts>
-		<workouts>
-			<ID>W6</ID>
-			<nameWorkout/>
-			<description/>
-			<type/>
-			<percentLike/>
-			<exerciseTime/>
-			<instructions/>
-			<imageMain/>
-			<imageThumbnail/>
 		</workouts>
 	</section4>
 </lifestylesDB>
