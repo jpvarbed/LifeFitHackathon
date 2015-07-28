@@ -69,6 +69,7 @@
 							<xs:element name="fat" type="xs:decimal"/>
 							<xs:element name="carbs" type="xs:decimal"/>
 							<xs:element name="protien" type="xs:decimal"/>
+							<xs:element name="mealSchedule" type="xs:string"/>
 						</xs:sequence>
                     </xs:complexType>
                 </xs:element>
