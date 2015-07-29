@@ -108,6 +108,8 @@ namespace LifeFitApp.Model
         public ExercisePlan exercisePlan;
         public string mealList;
         public string exerciseList;
+        public string exerciseDuration;
+        public string mealDuration;
         public int followers { get; set; } = 0;
         public LifeList(string name, XmlReader reader)
         {
@@ -130,6 +132,12 @@ namespace LifeFitApp.Model
                     break;
                 case "exercise":
                     this.exerciseList = reader.Value;
+                    break;
+                case "mealsTime":
+                    this.mealDuration = reader.Value;
+                    break;
+                case "workoutsTime":
+                    this.exerciseDuration = reader.Value;
                     break;
                 case "followers":
                     this.followers = reader.ReadContentAsInt();

@@ -12,14 +12,23 @@ namespace LifeFitApp.Controller
         public MealPlan mealPlan;
         public ExercisePlan exercisePlan;
         public string title { get; set; }
-        public int followers { get; set; }
+        public string followers { get; set; }
+        public string imageFixedPath { get; set; }
+        public string description { get; set; }
+
+        public string workoutDuration { get; set; }
+        public string mealDuration { get; set; }
         public LifeStyleDescriptionController(object obj)
         {
             list = obj as LifeList;
             mealPlan = list.mealPlan;
             exercisePlan = list.exercisePlan;
             title = list.name;
-            followers = list.followers;
+            followers = "Followers " + list.followers;
+            imageFixedPath = list.imageFixedPath;
+            description = list.description;
+            mealDuration = list.mealDuration;
+            workoutDuration = list.exerciseDuration;
         }
         private LifeList list;
     }

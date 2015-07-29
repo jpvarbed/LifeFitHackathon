@@ -38,7 +38,13 @@ namespace LifeFitApp.Views
         private void InitListsView()
         {
             LifeListTitleBox.DataContext = controller;
-            followersTextBox.DataContext = controller;
+            followersTextBlock.DataContext = controller;
+            mainImage.DataContext = controller;
+            listDescription.DataContext = controller;
+            MealsList.ItemsSource = controller.mealPlan.meals;
+            WorkoutsList.ItemsSource = controller.exercisePlan.exercises;
+            workoutTimeTextBlock.DataContext = controller;
+            mealTimeTextBlock.DataContext = controller;
         }
 
         private void ItemTapped(object sender, TappedRoutedEventArgs e)
