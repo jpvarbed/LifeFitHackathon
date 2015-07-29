@@ -13,14 +13,14 @@
                 <MenuFlyout/>
             </FlyoutBase.AttachedFlyout>
         </Rectangle>
-        <TextBlock x:Name="LifeStyleTitleBox" Height="34" Margin="66,29,27,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe UI Historic" FontSize="24" d:LayoutOverrides="LeftPosition, RightPosition">
+        <TextBlock x:Name="LifeListTitleBox" Text="{Binding title}" Height="34" Margin="66,29,27,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe UI Historic" FontSize="24" d:LayoutOverrides="LeftPosition, RightPosition">
         	<Run FontFamily="Nirmala UI Semilight" Text="Life Style Title"/>
         	<LineBreak/>
         	<Run FontFamily="Nirmala UI Semilight"/>
         	<LineBreak/>
         	<Run FontFamily="Nirmala UI Semilight"/>
         </TextBlock>
-        <ListView x:Name="ExcersiceListView" Margin="0,0,0,10" d:LayoutOverrides="LeftPosition, RightPosition" Height="95" VerticalAlignment="Bottom" Background="#FFDBDBDB">
+        <ListView x:Name="ExerciseListView" Margin="0,0,0,10" d:LayoutOverrides="LeftPosition, RightPosition" Height="95" VerticalAlignment="Bottom" Background="#FFDBDBDB">
             <ListBox x:Name="listBox" Height="2" Width="13"/>
         </ListView>
         <Button x:Name="Hamberger" Content="Button" Margin="10,29,0,0" VerticalAlignment="Top" Height="31" Width="35"/>
