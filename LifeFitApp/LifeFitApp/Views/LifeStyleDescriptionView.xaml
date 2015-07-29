@@ -23,8 +23,10 @@
         <ListView x:Name="ExerciseListView" Margin="0,0,0,10" d:LayoutOverrides="LeftPosition, RightPosition" Height="95" VerticalAlignment="Bottom" Background="#FFDBDBDB">
             <ListBox x:Name="listBox" Height="2" Width="13"/>
         </ListView>
-        <Button x:Name="Hamberger" Content="Button" Margin="10,29,0,0" VerticalAlignment="Top" Height="31" Width="35"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Right" Margin="0,52,19,0" TextWrapping="Wrap" Text="Followers #" VerticalAlignment="Top" Width="118" Height="19" BorderBrush="{x:Null}"/>
+        <Button x:Name="BackButton" Height="32" Margin="10,27,0,0" VerticalAlignment="Top" Width="36" d:LayoutOverrides="LeftMargin, RightMargin">
+            <Image Source="ms-appx:///Assets/hamburger.png"/>
+        </Button>
+        <TextBox x:Name="followersTextBox" HorizontalAlignment="Right" Margin="0,52,19,0" TextWrapping="Wrap" Text="{Binding followers}" VerticalAlignment="Top" Width="118" Height="19" BorderBrush="{x:Null}"/>
         <ListView x:Name="MealsListView" Margin="0,0,0,145" Height="95" VerticalAlignment="Bottom" d:LayoutOverrides="LeftPosition, RightPosition" BorderBrush="Black" Background="#FFDBDBDB">
             <ListBox x:Name="listBox1" Height="2" Width="13"/>
         </ListView>

@@ -38,6 +38,7 @@ namespace LifeFitApp.Views
         private void InitListsView()
         {
             LifeListTitleBox.DataContext = controller;
+            followersTextBox.DataContext = controller;
         }
 
         private void ItemTapped(object sender, TappedRoutedEventArgs e)

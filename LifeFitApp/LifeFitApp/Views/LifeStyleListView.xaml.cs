@@ -43,7 +43,7 @@ namespace LifeFitApp.Views
 
         private void ItemTapped(object sender, TappedRoutedEventArgs e)
         {
-            TextBlock block = sender as TextBlock;
+            FrameworkElement block = sender as FrameworkElement;
             this.Frame.Navigate(typeof(Views.LifeStyleDescriptionView), block.DataContext);
         }
     }

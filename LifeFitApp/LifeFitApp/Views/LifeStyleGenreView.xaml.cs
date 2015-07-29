@@ -33,13 +33,12 @@ namespace LifeFitApp.Views
         private void InitGenresView()
         {
             genreController = new LifeStyleGenreController();
-
-            genreList.ItemsSource = genreController.doubleStyles;
+            genreList.ItemsSource = genreController.lifeStyles;
         }
 
         private void ItemTapped(object sender, TappedRoutedEventArgs e)
         {
-            TextBlock block = sender as TextBlock;
+            FrameworkElement block = sender as FrameworkElement;
             this.Frame.Navigate(typeof(Views.LifeStyleListView), block.DataContext);
         }
     }

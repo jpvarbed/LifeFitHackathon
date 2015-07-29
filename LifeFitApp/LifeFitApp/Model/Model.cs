@@ -108,6 +108,7 @@ namespace LifeFitApp.Model
         public ExercisePlan exercisePlan;
         public string mealList;
         public string exerciseList;
+        public int followers { get; set; } = 0;
         public LifeList(string name, XmlReader reader)
         {
             this.typeName = name;
@@ -129,6 +130,9 @@ namespace LifeFitApp.Model
                     break;
                 case "exercise":
                     this.exerciseList = reader.Value;
+                    break;
+                case "followers":
+                    this.followers = reader.ReadContentAsInt();
                     break;
             }
         }
@@ -183,7 +187,6 @@ namespace LifeFitApp.Model
     public class ActivityItem : baseObj
     {
         public double percentLike { get; set; } = 20;
-        public int followers { get; set; } = 0;
         public string duration { get; set; } = "20 minutes";
         public string steps { get; set; } = "Do yoga";
 
@@ -219,9 +222,6 @@ namespace LifeFitApp.Model
                     break;
                 case "type":
                     this.exerciseType = reader.Value;
-                    break;
-                case "followers":
-                    this.followers = reader.ReadContentAsInt();
                     break;
                 case "percentLike":
                     this.percentLike = reader.ReadContentAsDouble();
