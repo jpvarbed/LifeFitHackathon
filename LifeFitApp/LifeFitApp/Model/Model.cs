@@ -29,6 +29,50 @@ namespace LifeFitApp.Model
             }
             return output;
         }
+
+        static public List<LifeList> GetLifeList(string list)
+        {
+            List<string> children = ParseList(list);
+            List<LifeList> output = new List<LifeList>();
+            foreach (var child in children)
+            {
+                baseObj obj;
+                if (DataModel.objectMap.TryGetValue(child, out obj))
+                {
+                    output.Add((LifeList)obj);
+                }
+            }
+            return output;
+        }
+
+        static public List<Meal> GetMealList(string list)
+        {
+            List<string> children = ParseList(list);
+            List<Meal> output = new List<Meal>();
+            foreach (var child in children)
+            {
+                baseObj obj;
+                if (DataModel.objectMap.TryGetValue(child, out obj))
+                {
+                    output.Add((Meal)obj);
+                }
+            }
+            return output;
+        }
+        static public List<Exercise> GetExerciseList(string list)
+        {
+            List<string> children = ParseList(list);
+            List<Exercise> output = new List<Exercise>();
+            foreach (var child in children)
+            {
+                baseObj obj;
+                if (DataModel.objectMap.TryGetValue(child, out obj))
+                {
+                    output.Add((Exercise)obj);
+                }
+            }
+            return output;
+        }
     }
 
     public class LifeStyle : baseObj
@@ -43,7 +87,7 @@ namespace LifeFitApp.Model
 
         override public void Initialize()
         {
-            List<string> lifelists = ParseHelper.ParseList(lists);
+            lifeLists = (List<LifeList>) ParseHelper.GetLifeList(lists);
         }
 
         override public void ParseOtherData(XmlReader reader)
@@ -84,6 +128,12 @@ namespace LifeFitApp.Model
             ParseData(name, reader);
         }
 
+        override public void Initialize()
+        {
+            mealPlan = new MealPlan(mealList);
+            exercisePlan = new ExercisePlan(exerciseList);
+        }
+
         public void ParseOtherData(XmlReader reader)
         {
             bool end = false;
@@ -116,21 +166,19 @@ namespace LifeFitApp.Model
     public class MealPlan : baseObj
     {
         public List<Meal> meals;
-        public MealPlan(string name, XmlReader reader)
+        public MealPlan(string mealList)
         {
-            this.typeName = name;
-            ParseData(name, reader);
+            meals = ParseHelper.GetMealList(mealList);
         }
     }
-
 
     public class ExercisePlan : baseObj
     {
         public List<Exercise> exercises;
-        public ExercisePlan(string name, XmlReader reader)
+
+        public ExercisePlan(string mealList)
         {
-            this.typeName = name;
-            ParseData(name, reader);
+            exercises = ParseHelper.GetExerciseList(mealList);
         }
     }
 
@@ -232,8 +280,8 @@ namespace LifeFitApp.Model
         public string typeName;
         // not all objects have this
         public string description;
-        string imageMain;
-        string imageThumb;
+        public string imageMain;
+        public string imageThumb;
         public virtual void ParseOtherData(XmlReader reader) { }
 
         public virtual void Initialize() { }
