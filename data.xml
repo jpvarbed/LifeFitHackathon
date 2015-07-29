@@ -5,49 +5,42 @@
 			<ID>1</ID>
 			<name>Athlete</name>
 			<lifelistDB>L1;L2</lifelistDB>
-			<imageMain>PATH</imageMain>
+			<imageMain>images\lifestyles\athlete.jpg</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 		</Lifestylelist>
 		<Lifestylelist>
 			<ID>2</ID>
 			<name>Getting Married</name>
 			<lifelistDB>L3;L4</lifelistDB>
-			<imageMain>PATH</imageMain>
+			<imageMain>images\lifestyles\wedding.jpg</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 		</Lifestylelist>
 		<Lifestylelist>
 			<ID>3</ID>
 			<name>Beginner</name>
 			<lifelistDB>L3;L2</lifelistDB>
-			<imageMain>PATH</imageMain>
-			<imageThumbnail>PATH</imageThumbnail>
-		</Lifestylelist>
-		<Lifestylelist>
-			<ID>4</ID>
-			<name>Celebrity</name>
-			<lifelistDB>L4;L2</lifelistDB>
-			<imageMain>PATH</imageMain>
+			<imageMain>images\lifestyles\runner.jpg</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 		</Lifestylelist>
 		<Lifestylelist>
 			<ID>5</ID>
 			<name>Beach &amp; Summer</name>
 			<lifelistDB>L1;L1</lifelistDB>
-			<imageMain>PATH</imageMain>
+			<imageMain>images\lifestyles\beach.jpg</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 		</Lifestylelist>
 		<Lifestylelist>
 			<ID>6</ID>
 			<name>Hoops and Dunks</name>
 			<lifelistDB>L1;L3</lifelistDB>
-			<imageMain>PATH</imageMain>
+			<imageMain>images\lifestyles\hoops.jpg</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 		</Lifestylelist>
 		<Lifestylelist>
 			<ID>7</ID>
 			<name>Crossfit</name>
 			<lifelistDB>L2;L3</lifelistDB>
-			<imageMain>PATH</imageMain>
+			<imageMain>images\lifestyles\crossfit.jpg</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 		</Lifestylelist>
 	</section1>
