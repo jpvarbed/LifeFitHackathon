@@ -36,8 +36,8 @@
                         <xs:sequence>
                             <xs:element name="ID" type="xs:string"/>
                             <xs:element name="name" type="xs:string"/>
-                            <xs:element name="mealTime" type="xs:decimal"/>
-                            <xs:element name="workoutTime" type="xs:decimal"/>    
+                            <xs:element name="mealsTime" type="xs:decimal"/>
+                            <xs:element name="workoutsTime" type="xs:decimal"/>    
                             <xs:element name="imageMain" type="xs:string"/>
 							<xs:element name="imageThumbnail" type="xs:string"/>
 							<xs:element name="followers" type="xs:decimal"/>
