@@ -129,6 +129,16 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\images\lifelists\dunklikedennis.jpg" />
+    <Content Include="Assets\images\lifelists\pinocchio.jpg" />
+    <Content Include="Assets\images\lifelists\runforestrun.jpg" />
+    <Content Include="Assets\images\meals\chickpeasalad.png" />
+    <Content Include="Assets\images\meals\mexicaneggsbenedict.jpg" />
+    <Content Include="Assets\images\meals\moroccanchicken.jpg" />
+    <Content Include="Assets\images\meals\tunacakes.jpg" />
+    <Content Include="Assets\images\workouts\Aerobic_exercise.jpg" />
+    <Content Include="Assets\images\workouts\wink.jpg" />
+    <Content Include="Assets\images\workouts\yoga.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\Logo.scale-100.png" />
     <Content Include="Assets\SmallLogo.scale-100.png" />
@@ -188,7 +198,9 @@
       <Private>True</Private>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Assets\images\lifestyles\" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
