@@ -26,10 +26,10 @@
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="{Binding name}" Tapped="ItemTapped"/>
+                        <Image Source="{Binding imageFixedPath}"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-
     </Grid>
 </Page>

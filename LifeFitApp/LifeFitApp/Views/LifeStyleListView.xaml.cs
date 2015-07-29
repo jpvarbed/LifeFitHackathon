@@ -37,7 +37,7 @@ namespace LifeFitApp.Views
 
         private void InitListsView()
         {
-            StyleListTitleBox.DataContext = controller.title;
+            StyleListTitleBox.DataContext = controller;
             styleList.ItemsSource = controller.lifeLists;
         }
 

@@ -182,7 +182,7 @@ namespace LifeFitApp.Model
 
     public class ActivityItem : baseObj
     {
-        public int percentLike { get; set; } = 20;
+        public double percentLike { get; set; } = 20;
         public int followers { get; set; } = 0;
         public string duration { get; set; } = "20 minutes";
         public string steps { get; set; } = "Do yoga";
@@ -224,7 +224,7 @@ namespace LifeFitApp.Model
                     this.followers = reader.ReadContentAsInt();
                     break;
                 case "percentLike":
-                    this.percentLike = reader.ReadContentAsInt();
+                    this.percentLike = reader.ReadContentAsDouble();
                     break;
             }
         }
@@ -243,11 +243,19 @@ namespace LifeFitApp.Model
         public string typeName { get; set; } = "type";
         // not all objects have this
         public string description { get; set; } = "description";
-        public string imageMain { get; set; } = "images\\lifelists\\pinocchio.jpg";
+        public string imageMain = "images/lifelists/pinocchio.jpg";
+        public string imageFixedPath { get; set; }
         public string imageThumb;
         public virtual void ParseOtherData(string readerName, XmlReader reader) { }
 
         public virtual void Initialize() { }
+
+        public string GetImageAssetPath(string badPath)
+        {
+            string start = "ms-appx:///Assets/";
+            string goodPath = badPath.Replace(@"\", "/");
+            return (start + goodPath);
+        }
 
         public void ParseData(string type, XmlReader reader)
         {
@@ -276,7 +284,11 @@ namespace LifeFitApp.Model
                                 this.name = reader.Value;
                                 break;
                             case "imageMain":
-                                this.imageMain = reader.Value;
+                                if (reader.Value != "PATH")
+                                {
+                                    this.imageMain = reader.Value;
+                                }
+                                this.imageFixedPath = GetImageAssetPath(this.imageMain);
                                 break;
                             case "imageThumbnail":
                                 this.imageThumb = reader.Value;
@@ -304,8 +316,8 @@ namespace LifeFitApp.Model
         }
         //public Image imageMain;
         //public Image thumbnail;
-        private string filePath;
-        private string thumbnailPath;
+        public string filePath;
+        public string thumbnailPath;
     }
 
     public class DataModel

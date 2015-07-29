@@ -10,7 +10,7 @@ namespace LifeFitApp.Controller
     class LifeStyleListController
     {
         public List<LifeList> lifeLists;
-        public string title;
+        public string title { get; set; }
         public LifeStyleListController (object obj)
         {
             style = obj as LifeStyle;

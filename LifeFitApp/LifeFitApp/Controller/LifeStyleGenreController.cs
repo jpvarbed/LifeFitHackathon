@@ -11,6 +11,7 @@ namespace LifeFitApp.Controller
     {
         private Model.Model model;
         public List<LifeStyle> lifeStyles;
+        public string imagePath;
 
         public LifeStyleGenreController()
         {
