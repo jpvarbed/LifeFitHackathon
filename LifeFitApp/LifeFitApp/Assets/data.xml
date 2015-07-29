@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lifestylesDB>
+	<section1>
+		<Lifestylelist>
+			<ID>1</ID>
+			<name>Athlete</name>
+			<lifelistDB>L1;L2</lifelistDB>
+			<imageMain>PATH</imageMain>
+			<imageThumbnail>PATH</imageThumbnail>
+		</Lifestylelist>
+		<Lifestylelist>
+			<ID>2</ID>
+			<name>Getting Married</name>
+			<lifelistDB>L3;L4</lifelistDB>
+			<imageMain>PATH</imageMain>
+			<imageThumbnail>PATH</imageThumbnail>
+		</Lifestylelist>
+		<Lifestylelist>
+			<ID>3</ID>
+			<name>Beginner</name>
+			<lifelistDB>L3;L2</lifelistDB>
+			<imageMain>PATH</imageMain>
+			<imageThumbnail>PATH</imageThumbnail>
+		</Lifestylelist>
+		<Lifestylelist>
+			<ID>4</ID>
+			<name>Celebrity</name>
+			<lifelistDB>L4;L2</lifelistDB>
+			<imageMain>PATH</imageMain>
+			<imageThumbnail>PATH</imageThumbnail>
+		</Lifestylelist>
+		<Lifestylelist>
+			<ID>5</ID>
+			<name>Beach &amp; Summer</name>
+			<lifelistDB>L1;L1</lifelistDB>
+			<imageMain>PATH</imageMain>
+			<imageThumbnail>PATH</imageThumbnail>
+		</Lifestylelist>
+		<Lifestylelist>
+			<ID>6</ID>
+			<name>Hoops and Dunks</name>
+			<lifelistDB>L1;L3</lifelistDB>
+			<imageMain>PATH</imageMain>
+			<imageThumbnail>PATH</imageThumbnail>
+		</Lifestylelist>
+		<Lifestylelist>
+			<ID>7</ID>
+			<name>Crossfit</name>
+			<lifelistDB>L2;L3</lifelistDB>
+			<imageMain>PATH</imageMain>
+			<imageThumbnail>PATH</imageThumbnail>
+		</Lifestylelist>
+	</section1>
+	<section2>
+		<Lifelist>
+			<ID>L1</ID>
+			<name>Dunk like Dennis</name>
+			<mealTime>0</mealTime>
+			<workoutTime>0</workoutTime>
+			<imageMain>images\lifelists\dunklikedennis.jpg</imageMain>
+			<imageThumbnail>PATH</imageThumbnail>
+			<followers>0</followers>
+			<meals>M1;M2;M3</meals>
+			<exercise>W1;W2;W3</exercise>
+			<description>Dunk bastketballs and jump like Dennis</description>
+		</Lifelist>
+		<Lifelist>
+			<ID>L2</ID>
+			<name>Run like Forest</name>
+			<mealTime>0</mealTime>
+			<workoutTime>0</workoutTime>
+			<imageMain>images\lifelists\runforestrun.jpg</imageMain>
+			<imageThumbnail>PATH</imageThumbnail>
+			<followers>0</followers>
+			<meals>M2;M4;M1</meals>
+			<exercise>W3;W2;W1</exercise>
+			<description>Life is like a box of chocolates</description>
+		</Lifelist>
+		<Lifelist>
+			<ID>L3</ID>
+			<name>Fuck like Pinoccio</name>
+			<mealTime>0</mealTime>
+			<workoutTime>0</workoutTime>
+			<imageMain>images\lifelists\pinocchio.jpg</imageMain>
+			<imageThumbnail>PATH</imageThumbnail>
+			<followers>0</followers>
+			<meals>M1;M4;M3</meals>
+			<exercise>W1;W3;</exercise>
+			<description>Don't let you nose be your tell</description>
+		</Lifelist>
+		<Lifelist>
+			<ID>L4</ID>
+			<name>Triatholon Prep</name>
+			<mealTime>0</mealTime>
+			<workoutTime>0</workoutTime>
+			<imageMain>PATH</imageMain>
+			<imageThumbnail>PATH</imageThumbnail>
+			<followers>0</followers>
+			<meals>M1;M4;M2</meals>
+			<exercise>W1;W2;W2</exercise>
+			<description>Don't let you nose be your tell</description>
+		</Lifelist>
+	</section2>
+	<section3>
+		<meal>
+			<ID>M1</ID>
+			<name>Tuna Cakes</name>
+			<description>Tuna cakes will help you gain muscle and shed fat</description>
+			<ingredients>3 oz Tuna; 1 Egg; 1 Tbls Coconut Oil; 1 Green Onion</ingredients>
+			<percentLike>0</percentLike>
+			<imageMain>images\meals\tunacakes.jpg</imageMain>
+			<mealTime>20</mealTime>
+			<instructions>Step 1:  Drain the tuna and mix the tuna and egg together in a bowl; Step 2: Chop up the green onion and mix in the tuna; Step 3:  Add coconut oil to a pan on medium-high heat.    Smush the tuna into a flat cake like size and once the oil is hot cook; Step 4: After 3 minutes or once the bottom is fairly brown, flip the tuna cake and cook for 3 more minutes</instructions>
+			<imageThumbnail>PATH</imageThumbnail>
+			<dietaryRestrictions>GF; P;</dietaryRestrictions>
+			<fat>100</fat>
+			<carbs>0</carbs>
+			<protien>200</protien>
+			<mealSchedule>Breakfast</mealSchedule>
+		</meal>
+		<meal>
+			<ID>M2</ID>
+			<name>Chickpea Salad Sandwich</name>
+			<description>The mashed chickpeas create a texture very similar to flaked chicken and the sauce gets a boost from a creamy eggless mayonnaise. I’ve also added a hefty amount of crunchy vegetables like celery, green onion, pickles, and bell peppers to give it a great crunch and loads of fibre. Serve this salad in pieces of Boston or Bibb lettuce, in a wrap or sandwich, or on crackers. If you have a picnic or road trip in store you’ll be happy to know that it packs well. 
+</description>
+			<ingredients>1 (15-ounce) can chickpeas, drained and rinsed;2 stalks celery, finely chopped;3 green onions, thinly sliced; 1/4 cup finely chopped dill pickle;1/4 cup  finely chopped red bell pepper;3 tablespoons mayonnaise;1 clove garlic, minced;1 1/2 tsp yellow mustard;2 tsp minced fresh dill;1 1/2 tsp fresh lemon juice;1/4 tsp fine-grain sea salt;Freshly ground black pepper
+</ingredients>
+			<percentLike>0</percentLike>
+			<imageMain>images\meals\chickpeasalad.png</imageMain>
+			<mealTime>30</mealTime>
+			<instructions>In a large bowl, mash the chickpeas with a potato masher until flaked in texture.
+    Stir in the celery, green onions, pickles, bell peppers, mayonnaise, and garlic until combined.
+    Stir in the mustard and dill and season with the lemon juice, salt, and pepper, adjusting the quantities to taste.
+    Serve with toasted bread, on crackers, wraps, or on top of a basic leafy green salad. 
+Tip: If you’d like a soy-free version of this salad, be sure to use soy-free vegan mayonnaise. Veganaise makes a great soy-free version.
+</instructions>
+			<imageThumbnail>PATH</imageThumbnail>
+			<dietaryRestrictions>GF;Vegan;</dietaryRestrictions>
+			<fat>100</fat>
+			<carbs>200</carbs>
+			<protien>150</protien>
+			<mealSchedule>Lunch</mealSchedule>
+		</meal>
+		<meal>
+			<ID>M3</ID>
+			<name>Moroccan Chicken</name>
+			<description>Slow Cooker Moroccan Chicken with Chopped Almonds, Apricots and Cauliflower “Couscous”</description>
+			<ingredients>For the Chicken;
+2 tablespoons extra-virgin olive oil;
+3 pounds bone-in chicken thighs, skins removed;
+1 medium yellow onion, peeled and sliced;
+3 cloves garlic, minced;
+1 tsp ground ginger;
+1 tsp ground cumin;
+1/2 tsp ground coriander;
+1/2 tsp ground cinnamon;
+1/4 tsp cayenne;
+1 tsp sea salt;
+1/4 tsp cracked pepper;
+1/2 cup unsalted chicken stock;
+1/4 cup unsalted natural almond butter;
+6 ounces unsweetened dried apricots;
+1 pound baby carrots;
+For the Cauliflower Couscous;
+1 large head cauliflower, cut into florets;
+2 tablespoons extra-virgin olive oil;
+3/4 cup yellow onion, diced;
+2 cloves garlic, minced;
+1 tsp sea salt;
+1/4 tsp cracked pepper;
+2 tablespoons unsweetened dried cherries;
+1/4 cup chopped fresh basil;
+1/4 cup chopped fresh cilantro;
+Zest of one lemon;
+1/4 cup sliced almonds, toasted;
+1/4 cup fresh cilantro;</ingredients>
+			<percentLike>0</percentLike>
+			<imageMain>images\meals\moroccanchicken.jpg</imageMain>
+			<mealTime>380</mealTime>
+			<instructions>Step 1: Heat olive oil in a large pot over medium-high heat. Season the chicken generously with salt and pepper then add half of the chicken to the pot. Cook for 5 minutes, browning on all sides. Transfer the chicken to a slow cooker and repeat with remaining chicken.;
+Step 2: Return the pot to the stove and add onion and garlic and sauté for three minutes or until tender. Add the ginger, cumin, coriander, cinnamon, cayenne, salt and pepper and sauté for 30 seconds or until fragrant.;
+Step 3: Stir in chicken stock and almond butter, scraping pot to loosen any browned bits. Pour contents of pot over chicken into the slow cooker. Cover and cook on low for five hours.
+Add the apricots and baby carrots to the slow cooker, cover and cook an additional hour.;
+Step 4: Meanwhile, prepare the cauliflower “couscous.” Grate cauliflower by running the florets through a food processor with a grating attachment or use a box grater to create rice-like pieces. Pick out any large fragments that didn’t get shredded and save for another use. Heat olive oil in a skillet over medium heat. Sauté the onions and garlic for 2 minutes, then add the cauliflower, salt and pepper. Sauté for 8 to 10 minutes, until the cauliflower is tender. Stir in the cherries, basil, cilantro and lemon zest.;
+Step 5: Garnish the chicken with toasted, sliced almonds and fresh cilantro. Serve over cauliflower couscous.</instructions>
+			<imageThumbnail>PATH</imageThumbnail>
+			<dietaryRestrictions>GF</dietaryRestrictions>
+			<fat>90</fat>
+			<carbs>30</carbs>
+			<protien>340</protien>
+			<mealSchedule>Dinner</mealSchedule>
+		</meal>
+		<meal>
+			<ID>M4</ID>
+			<name>Mexican Eggs Benedict</name>
+			<description/>
+			<ingredients>2 dried chipotle chilies; 3 large egg yolks;2 tsp lime juice;2/3 cup salted clarified butter or ghee, melted;8 large eggs, poached;1 Tbsp extra-virgin olive oil;8 cups baby spinach;1 avocado slices;fresh cilantro</ingredients>
+			<percentLike>0</percentLike>
+			<imageMain>images\meals\mexicaneggsbenedict.jpg</imageMain>
+			<mealTime>30</mealTime>
+			<instructions>To make the sauce: Soak the chilies in boiling water for 15 minutes, until softened. Remove the seeds for a more mild sauce, or leave them in for a spicy sauce.  Add the chilies to a blender with the egg yolks and lime juice. Blend until smooth. With the blender running on medium-speed, slowly drizzle in the melted clarified butter or ghee. If sauce separates or is too thick, whisk in a teaspoon of water at a time until it reaches desired consistency.  The sauce can now be stored in the refrigerator for up to 3 days and gently reheated over a double boiler.
+Melt the bacon fat in a skillet over medium-high heat and add the spinach. Cook for 2 to 3 minutes, or until it is wilted, then season with salt and pepper to taste. Divide the spinach between 4 plates and top with 2 poached eggs and a drizzle of the Chipotle Hollandaise Sauce.
+Serve with avocado, fried plantains, cilantro,</instructions>
+			<imageThumbnail>PATH</imageThumbnail>
+			<dietaryRestrictions>GF; V;</dietaryRestrictions>
+			<fat>200</fat>
+			<carbs>0</carbs>
+			<protien>300</protien>
+			<mealSchedule>Breakfast</mealSchedule>
+		</meal>
+	</section3>
+	<section4>
+		<workout>
+			<ID>W1</ID>
+			<name>Running</name>
+			<description>Run your ass off</description>
+			<type>Aerobic</type>
+			<percentLike>0.1</percentLike>
+			<exerciseTime>30</exerciseTime>
+			<instructions>Run!</instructions>
+			<imageMain>images\workouts\Aerobic_exercise.jpg</imageMain>
+			<imageThumbnail>PATH</imageThumbnail>
+		</workout>
+		<workout>
+			<ID>W2</ID>
+			<name>Yoga like a pro</name>
+			<description>Sweat out that water weight</description>
+			<type>Weight control</type>
+			<percentLike>0.9</percentLike>
+			<exerciseTime>60</exerciseTime>
+			<instructions>Power Yoga</instructions>
+			<imageMain>images\workouts\yoga.jpg</imageMain>
+			<imageThumbnail>PATH</imageThumbnail>
+		</workout>
+		<workout>
+			<ID>W3</ID>
+			<name>Cum on man</name>
+			<description>What do you think</description>
+			<type>Anaerobic</type>
+			<percentLike>0.8</percentLike>
+			<exerciseTime>90</exerciseTime>
+			<instructions>Jerking off</instructions>
+			<imageMain>images\workouts\wink.jpg</imageMain>
+			<imageThumbnail>PATH</imageThumbnail>
+		</workout>
+	</section4>
+</lifestylesDB>

@@ -120,9 +120,8 @@ namespace LifeFitApp.Model
             exercisePlan = new ExercisePlan(exerciseList);
         }
 
-        public void ParseOtherData(string readerName, XmlReader reader)
+        override public void ParseOtherData(string readerName, XmlReader reader)
         {
-            bool end = false;
             switch (readerName)
             {
                 case "meals":
@@ -183,21 +182,21 @@ namespace LifeFitApp.Model
 
     public class ActivityItem : baseObj
     {
-        public int percentLike = 20;
-        public int followers = 0;
-        public string duration = "20 minutes";
-        public string steps = "Do yoga";
+        public int percentLike { get; set; } = 20;
+        public int followers { get; set; } = 0;
+        public string duration { get; set; } = "20 minutes";
+        public string steps { get; set; } = "Do yoga";
 
         // hack
-        public string fat = "50mg";
-        public string carbs = "2000g";
-        public string protein = "30g";
-        public string ingredients = "300 ants";
+        public string fat { get; set; } = "50mg";
+        public string carbs { get; set; } = "2000g";
+        public string protein { get; set; } = "30g";
+        public string ingredients { get; set; } = "300 ants";
 
         // exercise hack
-        public string exerciseType = "cardio";
+        public string exerciseType { get; set; } = "cardio";
 
-        public void ParseOtherData(string readerName, XmlReader reader)
+        override public void ParseOtherData(string readerName, XmlReader reader)
         {
             bool end = false;
             switch (readerName)
@@ -238,13 +237,13 @@ namespace LifeFitApp.Model
 
     public class baseObj
     {
-        public string guid = "1";
-        public string name = "Dunking";
+        public string guid { get; set; } = "1";
+        public string name { get; set; } = "Dunking";
         public LifeImage image;
-        public string typeName = "type";
+        public string typeName { get; set; } = "type";
         // not all objects have this
-        public string description = "description";
-        public string imageMain = "images\\lifelists\\pinocchio.jpg";
+        public string description { get; set; } = "description";
+        public string imageMain { get; set; } = "images\\lifelists\\pinocchio.jpg";
         public string imageThumb;
         public virtual void ParseOtherData(string readerName, XmlReader reader) { }
 
@@ -329,7 +328,7 @@ namespace LifeFitApp.Model
                                     objectMap.Add(style.guid, style);
                                     lifestyles.Add(style);
                                     break;
-                                case "LifeList":
+                                case "Lifelist":
                                     LifeList list = new LifeList("Lifelist", reader);
                                     objectMap.Add(list.guid, list);
                                     break;
@@ -345,13 +344,14 @@ namespace LifeFitApp.Model
                         break;
                     }
                 }
-                return lifestyles;
             }
 
             foreach(var item in objectMap)
             {
                 item.Value.Initialize();
             }
+
+            return lifestyles;
         }
         static public Dictionary<string, baseObj> objectMap;
     }

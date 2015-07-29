@@ -19,7 +19,7 @@ namespace LifeFitApp.Controller
 
         public void InitLifeStyles()
         {
-            model= new Model.Model();
+            model = new Model.Model();
 
             lifeStyles = model.GetLifeStyles();
         }

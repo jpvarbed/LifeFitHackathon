@@ -97,6 +97,7 @@
     </Compile>
     <Compile Include="Controller\LifeStyleDescriptionController.cs" />
     <Compile Include="Controller\LifeStyleGenreController.cs" />
+    <Compile Include="Controller\LifeStyleListController.cs" />
     <Compile Include="Controller\MainPageController.cs" />
     <Compile Include="Model\Model.cs" />
     <Compile Include="Views\MainPage.xaml.cs">
@@ -129,6 +130,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\data.xml" />
     <Content Include="Assets\images\lifelists\dunklikedennis.jpg" />
     <Content Include="Assets\images\lifelists\pinocchio.jpg" />
     <Content Include="Assets\images\lifelists\runforestrun.jpg" />

@@ -13,15 +13,17 @@
                 <MenuFlyout/>
             </FlyoutBase.AttachedFlyout>
         </Rectangle>
-        <TextBlock x:Name="GenreTitleBox" Height="47" Margin="65,24,70,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe UI Historic" FontSize="32">
-        	<Run FontFamily="Nirmala UI Semilight" Text="Life Style"/>
-        	<LineBreak/>
-        	<Run FontFamily="Nirmala UI Semilight"/>
+        <TextBlock x:Name="StyleListTitleBox" Text="{Binding title}" Height="47" Margin="65,24,70,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Nirmala UI Semilight" FontSize="32">
         </TextBlock>
-        <ListView x:Name="listView" Margin="10,80,43,10" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition">
-            <ListBox x:Name="listBox" Height="2" Width="13"/>
-        </ListView>
+        <ListBox x:Name="styleList" Margin="10,80,43,10" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding name}" Tapped="ItemTapped"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
         <Button x:Name="Hamberger" Content="Button" Margin="10,29,0,0" VerticalAlignment="Top" Height="31" Width="35"/>
-
     </Grid>
 </Page>
