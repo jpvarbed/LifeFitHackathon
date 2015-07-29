@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using LifeFitApp.Controller;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -22,9 +23,19 @@ namespace LifeFitApp.Views
     /// </summary>
     public sealed partial class LifeStyleGenreView : Page
     {
+        LifeStyleGenreController genreController;
         public LifeStyleGenreView()
         {
             this.InitializeComponent();
+            this.InitGenresView();
         }
+
+        private void InitGenresView()
+        {
+            genreController = new LifeStyleGenreController();
+
+            genreList.ItemsSource = genreController.lifeStyles;    
+        }
+
     }
 }

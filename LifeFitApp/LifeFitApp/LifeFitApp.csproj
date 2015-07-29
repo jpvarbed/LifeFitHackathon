@@ -96,6 +96,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controller\LifeStyleDescriptionController.cs" />
+    <Compile Include="Controller\LifeStyleGenreController.cs" />
     <Compile Include="Controller\MainPageController.cs" />
     <Compile Include="Model\Model.cs" />
     <Compile Include="Views\MainPage.xaml.cs">

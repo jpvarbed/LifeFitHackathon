@@ -21,9 +21,15 @@
         	<Run/>
         </TextBlock>
         <Button x:Name="BackButton" Content="Button" Height="32" Margin="10,27,0,0" VerticalAlignment="Top" Width="36" d:LayoutOverrides="LeftMargin, RightMargin"/>
-        <ListView x:Name="listView" Margin="10,80,43,10" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition">
-            <ListBox x:Name="listBox" Height="2" Width="13"/>
-        </ListView>
+        <ListBox x:Name="genreList" Margin="10,80,43,10" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition">        
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Name}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
 
     </Grid>
 </Page>

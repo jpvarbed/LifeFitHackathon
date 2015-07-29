@@ -8,6 +8,9 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Grid.Row="1">
+            <HyperlinkButton Content="Browse Genre" Click="HyperlinkButton_Click"/>
+        </StackPanel>
 
     </Grid>
 </Page>
