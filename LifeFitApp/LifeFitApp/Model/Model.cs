@@ -311,8 +311,9 @@ namespace LifeFitApp.Model
 
     public class DataModel
     {
-        public void import()
+        public List<LifeStyle> import()
         {
+            List<LifeStyle> lifestyles = new List<LifeStyle>();
             objectMap = new Dictionary<string, baseObj>();
             using (XmlReader reader = XmlReader.Create("Assets\\data.xml"))
             {
@@ -326,6 +327,7 @@ namespace LifeFitApp.Model
                                 case "Lifestylelist":
                                     LifeStyle style = new LifeStyle("Lifestylelist", reader);
                                     objectMap.Add(style.guid, style);
+                                    lifestyles.Add(style);
                                     break;
                                 case "LifeList":
                                     LifeList list = new LifeList("Lifelist", reader);
@@ -343,6 +345,7 @@ namespace LifeFitApp.Model
                         break;
                     }
                 }
+                return lifestyles;
             }
 
             foreach(var item in objectMap)
@@ -358,7 +361,7 @@ namespace LifeFitApp.Model
         public Model()
         {
             DataModel model = new DataModel();
-            model.import();
+            lifeStyles = model.import();
         }
         
         public List<LifeStyle> GetLifeStyles()
