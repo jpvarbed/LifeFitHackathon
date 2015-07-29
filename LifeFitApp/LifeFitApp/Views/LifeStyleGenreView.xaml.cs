@@ -34,7 +34,7 @@ namespace LifeFitApp.Views
         {
             genreController = new LifeStyleGenreController();
 
-            genreList.ItemsSource = genreController.lifeStyles;
+            genreList.ItemsSource = genreController.doubleStyles;
         }
 
         private void ItemTapped(object sender, TappedRoutedEventArgs e)

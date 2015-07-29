@@ -134,6 +134,12 @@
     <Content Include="Assets\images\lifelists\dunklikedennis.jpg" />
     <Content Include="Assets\images\lifelists\pinocchio.jpg" />
     <Content Include="Assets\images\lifelists\runforestrun.jpg" />
+    <Content Include="Assets\images\lifestyles\athlete.jpg" />
+    <Content Include="Assets\images\lifestyles\beach.jpg" />
+    <Content Include="Assets\images\lifestyles\crossfit.jpg" />
+    <Content Include="Assets\images\lifestyles\hoops.jpg" />
+    <Content Include="Assets\images\lifestyles\runner.jpg" />
+    <Content Include="Assets\images\lifestyles\wedding.jpg" />
     <Content Include="Assets\images\meals\chickpeasalad.png" />
     <Content Include="Assets\images\meals\mexicaneggsbenedict.jpg" />
     <Content Include="Assets\images\meals\moroccanchicken.jpg" />
@@ -200,9 +206,7 @@
       <Private>True</Private>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Assets\images\lifestyles\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
