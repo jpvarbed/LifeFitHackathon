@@ -55,8 +55,8 @@
 		<Lifelist>
 			<ID>L1</ID>
 			<name>Dunk like Dennis</name>
-			<mealTime>0</mealTime>
-			<workoutTime>0</workoutTime>
+			<mealsTime>0</mealsTime>
+			<workoutsTime>0</workoutsTime>
 			<imageMain>images\lifelists\dunklikedennis.jpg</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 			<followers>0</followers>
@@ -67,8 +67,8 @@
 		<Lifelist>
 			<ID>L2</ID>
 			<name>Run like Forest</name>
-			<mealTime>0</mealTime>
-			<workoutTime>0</workoutTime>
+			<mealsTime>0</mealsTime>
+			<workoutsTime>0</workoutsTime>
 			<imageMain>images\lifelists\runforestrun.jpg</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 			<followers>0</followers>
@@ -79,8 +79,8 @@
 		<Lifelist>
 			<ID>L3</ID>
 			<name>Fuck like Pinoccio</name>
-			<mealTime>0</mealTime>
-			<workoutTime>0</workoutTime>
+			<mealsTime>0</mealsTime>
+			<workoutsTime>0</workoutsTime>
 			<imageMain>images\lifelists\pinocchio.jpg</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 			<followers>0</followers>
@@ -91,8 +91,8 @@
 		<Lifelist>
 			<ID>L4</ID>
 			<name>Triatholon Prep</name>
-			<mealTime>0</mealTime>
-			<workoutTime>0</workoutTime>
+			<mealsTime>0</mealsTime>
+			<workoutsTime>0</workoutsTime>
 			<imageMain>PATH</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
 			<followers>0</followers>
