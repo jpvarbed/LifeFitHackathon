@@ -102,7 +102,7 @@
 		</Lifelist>
 	</section2>
 	<section3>
-		<meals>
+		<meal>
 			<ID>M1</ID>
 			<name>Tuna Cakes</name>
 			<description>Tuna cakes will help you gain muscle and shed fat</description>
@@ -117,8 +117,8 @@
 			<carbs>0</carbs>
 			<protien>200</protien>
 			<mealSchedule>Breakfast</mealSchedule>
-		</meals>
-		<meals>
+		</meal>
+		<meal>
 			<ID>M2</ID>
 			<name>Chickpea Salad Sandwich</name>
 			<description>The mashed chickpeas create a texture very similar to flaked chicken and the sauce gets a boost from a creamy eggless mayonnaise. I’ve also added a hefty amount of crunchy vegetables like celery, green onion, pickles, and bell peppers to give it a great crunch and loads of fibre. Serve this salad in pieces of Boston or Bibb lettuce, in a wrap or sandwich, or on crackers. If you have a picnic or road trip in store you’ll be happy to know that it packs well. 
@@ -140,8 +140,8 @@ Tip: If you’d like a soy-free version of this salad, be sure to use soy-free v
 			<carbs>200</carbs>
 			<protien>150</protien>
 			<mealSchedule>Lunch</mealSchedule>
-		</meals>
-		<meals>
+		</meal>
+		<meal>
 			<ID>M3</ID>
 			<name>Moroccan Chicken</name>
 			<description>Slow Cooker Moroccan Chicken with Chopped Almonds, Apricots and Cauliflower “Couscous”</description>
@@ -189,8 +189,8 @@ Step 5: Garnish the chicken with toasted, sliced almonds and fresh cilantro. Ser
 			<carbs>30</carbs>
 			<protien>340</protien>
 			<mealSchedule>Dinner</mealSchedule>
-		</meals>
-		<meals>
+		</meal>
+		<meal>
 			<ID>M4</ID>
 			<name>Mexican Eggs Benedict</name>
 			<description/>
@@ -207,10 +207,10 @@ Serve with avocado, fried plantains, cilantro,</instructions>
 			<carbs>0</carbs>
 			<protien>300</protien>
 			<mealSchedule>Breakfast</mealSchedule>
-		</meals>
+		</meal>
 	</section3>
 	<section4>
-		<workouts>
+		<workout>
 			<ID>W1</ID>
 			<name>Running</name>
 			<description>Run your ass off</description>
@@ -220,8 +220,8 @@ Serve with avocado, fried plantains, cilantro,</instructions>
 			<instructions>Run!</instructions>
 			<imageMain>images\workouts\Aerobic_exercise.jpg</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
-		</workouts>
-		<workouts>
+		</workout>
+		<workout>
 			<ID>W2</ID>
 			<name>Yoga like a pro</name>
 			<description>Sweat out that water weight</description>
@@ -231,8 +231,8 @@ Serve with avocado, fried plantains, cilantro,</instructions>
 			<instructions>Power Yoga</instructions>
 			<imageMain>images\workouts\yoga.jpg</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
-		</workouts>
-		<workouts>
+		</workout>
+		<workout>
 			<ID>W3</ID>
 			<name>Cum on man</name>
 			<description>What do you think</description>
@@ -242,6 +242,6 @@ Serve with avocado, fried plantains, cilantro,</instructions>
 			<instructions>Jerking off</instructions>
 			<imageMain>images\workouts\wink.jpg</imageMain>
 			<imageThumbnail>PATH</imageThumbnail>
-		</workouts>
+		</workout>
 	</section4>
 </lifestylesDB>

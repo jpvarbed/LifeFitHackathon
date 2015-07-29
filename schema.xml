@@ -53,7 +53,7 @@
 	<xs:element name="section3">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="meals" minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="meal" minOccurs="0" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="ID" type="xs:string"/>
@@ -79,7 +79,7 @@
 	<xs:element name="section4">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="workouts" minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="workout" minOccurs="0" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="ID" type="xs:string"/>
