@@ -15,7 +15,7 @@
         </Rectangle>
         <TextBlock x:Name="StyleListTitleBox" Text="{Binding title}" Height="47" Margin="65,24,70,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Nirmala UI Semilight" FontSize="32">
         </TextBlock>
-        <Button x:Name="BackButton" Height="32" Margin="10,27,0,0" VerticalAlignment="Top" Width="36" d:LayoutOverrides="LeftMargin, RightMargin">
+        <Button x:Name="BackButton" Tapped="BackTapped" Height="32" Margin="10,27,0,0" VerticalAlignment="Top" Width="36" d:LayoutOverrides="LeftMargin, RightMargin">
             <Image Source="ms-appx:///Assets/hamburger.png"/>
         </Button>
         <GridView x:Name="styleList" Margin="10,80,10,10" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition">

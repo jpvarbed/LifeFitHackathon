@@ -27,6 +27,8 @@ namespace LifeFitApp.Views
         public LifeStyleGenreView()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode =
+        Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
             this.InitGenresView();
         }
 

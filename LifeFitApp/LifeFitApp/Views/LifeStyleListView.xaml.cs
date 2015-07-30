@@ -27,6 +27,8 @@ namespace LifeFitApp.Views
         public LifeStyleListView()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode =
+        Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -39,6 +41,14 @@ namespace LifeFitApp.Views
         {
             StyleListTitleBox.DataContext = controller;
             styleList.ItemsSource = controller.lifeLists;
+        }
+
+        private void BackTapped(object sender, TappedRoutedEventArgs e)
+        {
+            if (this.Frame.CanGoBack)
+            {
+                this.Frame.GoBack();
+            }
         }
 
         private void ItemTapped(object sender, TappedRoutedEventArgs e)

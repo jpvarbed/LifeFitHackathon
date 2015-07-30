@@ -27,6 +27,8 @@ namespace LifeFitApp.Views
         public LifeStyleDescriptionView()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode =
+        Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -45,6 +47,14 @@ namespace LifeFitApp.Views
             WorkoutsList.ItemsSource = controller.exercisePlan.exercises;
             workoutTimeTextBlock.DataContext = controller;
             mealTimeTextBlock.DataContext = controller;
+        }
+
+        private void BackTapped(object sender, TappedRoutedEventArgs e)
+        {
+            if (this.Frame.CanGoBack)
+            {
+                this.Frame.GoBack();
+            }
         }
 
         private void ItemTapped(object sender, TappedRoutedEventArgs e)

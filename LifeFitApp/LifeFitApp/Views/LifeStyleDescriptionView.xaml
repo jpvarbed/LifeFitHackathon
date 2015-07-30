@@ -15,7 +15,7 @@
         </Rectangle>-->
         <!--title-->
         <StackPanel Orientation="Horizontal">
-            <Button x:Name="BackButton"  Height="32" Margin="10,27,0,0" VerticalAlignment="Top" Width="36" d:LayoutOverrides="LeftMargin, RightMargin">
+            <Button x:Name="BackButton"  Tapped="BackTapped" Height="32" Margin="10,27,0,0" VerticalAlignment="Top" Width="36" d:LayoutOverrides="LeftMargin, RightMargin">
                 <Image Source="ms-appx:///Assets/hamburger.png"/>
             </Button>
             <TextBlock x:Name="LifeListTitleBox" Text="{Binding title}" Height="34" Margin="66,29,27,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe UI Historic" FontSize="24" d:LayoutOverrides="LeftPosition, RightPosition">
@@ -44,6 +44,7 @@
                 <TextBlock x:Name="workoutTimeTextBlock" HorizontalAlignment="Right" Margin="0,0,0,0" TextWrapping="Wrap" Text="{Binding workoutDuration}" VerticalAlignment="Top" Width="118" Height="19"/>
                 <TextBlock x:Name="mealTimeTextBlock" HorizontalAlignment="Right" Margin="0,0,0,0" TextWrapping="Wrap" Text="{Binding mealDuration}" VerticalAlignment="Top" Width="118" Height="19"/>
             </StackPanel>
+            <Image Height="50" Width="50" x:Name="exerciseQualiferImage"  Source="ms-appx:///Assets/runningman.png"/>
         </StackPanel>
         
         <!--summary-->
