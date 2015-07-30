@@ -139,6 +139,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\calendar.PNG" />
     <Content Include="Assets\data.xml" />
     <Content Include="Assets\FitListAppIcon.png" />
     <Content Include="Assets\hamburger.png" />
@@ -154,7 +155,6 @@
     <Content Include="Assets\images\lifelists\KimsBunsandThighs_thumb.jpg" />
     <Content Include="Assets\images\lifelists\LeanCleanGreen.jpg" />
     <Content Include="Assets\images\lifelists\LeanCleanGreen_thumb.jpg" />
-    <Content Include="Assets\images\lifelists\pinocchio.jpg" />
     <Content Include="Assets\images\lifelists\runforestrun.jpg" />
     <Content Include="Assets\images\lifelists\runforestrun_thumb.jpg" />
     <Content Include="Assets\images\lifelists\Triathalon.jpg" />
@@ -166,12 +166,23 @@
     <Content Include="Assets\images\lifestyles\runner.jpg" />
     <Content Include="Assets\images\lifestyles\wedding.jpg" />
     <Content Include="Assets\images\meals\chickpeasalad.png" />
+    <Content Include="Assets\images\meals\chickpeasalad_thumb.png" />
     <Content Include="Assets\images\meals\mexicaneggsbenedict.jpg" />
+    <Content Include="Assets\images\meals\mexicaneggsbenedict_thumb.jpg" />
     <Content Include="Assets\images\meals\moroccanchicken.jpg" />
+    <Content Include="Assets\images\meals\moroccanchicken_thumb.jpg" />
     <Content Include="Assets\images\meals\tunacakes.jpg" />
+    <Content Include="Assets\images\meals\tunacakes_thumb.jpg" />
+    <Content Include="Assets\images\workouts\5krun.jpg" />
+    <Content Include="Assets\images\workouts\5krun_thumb.jpg" />
     <Content Include="Assets\images\workouts\Aerobic_exercise.jpg" />
-    <Content Include="Assets\images\workouts\wink.jpg" />
+    <Content Include="Assets\images\workouts\Aerobic_exercise_tumb.jpg" />
+    <Content Include="Assets\images\workouts\deadlifts.jpg" />
+    <Content Include="Assets\images\workouts\deadlifts_thumb.jpg" />
+    <Content Include="Assets\images\workouts\squats.jpg" />
+    <Content Include="Assets\images\workouts\squats_thumb.jpg" />
     <Content Include="Assets\images\workouts\yoga.jpg" />
+    <Content Include="Assets\images\workouts\yoga_thumb.jpg" />
     <Content Include="Assets\runningman.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\Logo.scale-100.png" />

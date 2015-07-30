@@ -12,10 +12,14 @@ namespace LifeFitApp.Controller
         public string name;
         public string activityName;
         public string activityImage;
+        public Meal meal;
+        public Exercise exercise;
         public WeeklyController(object obj)
         {
             list = obj as LifeList;
             name = list.name;
+            meal = list.mealPlan.meals.First();
+            exercise = list.exercisePlan.exercises.First();
         }
 
         public void UpdateActivity()

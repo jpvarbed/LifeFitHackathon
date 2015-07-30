@@ -10,17 +10,37 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,0,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <local:TitleBar Grid.Row="0" Margin="0,-19,0,0" x:Name="Title" Tapped="BackTapped" title="{Binding}"/>
-        <ListView Grid.Row="1">
-            <TextBlock x:Name="Header" HorizontalAlignment="Right" Margin="0,0,0,0" TextWrapping="Wrap" Text="To Do:" VerticalAlignment="Top" FontFamily="Segoe UI Historic"/>
-                <CheckBox x:Name="ActivityCheckBox" Checked="CheckBox_Checked">
-                    <StackPanel Orientation="Vertical" Tapped="ActivityTapped">
-                        <TextBlock x:Name="ActivityName" HorizontalAlignment="Right" Margin="0,0,0,0" TextWrapping="Wrap" Text="{Binding}" VerticalAlignment="Top" FontFamily="Segoe UI Historic"/>
-                        <Image x:Name="ActivityImage" Margin="0,0,0,0" Source="{Binding}"/>
-                    </StackPanel>
-                </CheckBox>
+        <Image Grid.Row="1" x:Name="FakeCalendar" Height="100" Width="100" Margin="0,0,0,0" Source="ms-appx:///Assets/calendar.png"/>
+        <ListView Grid.Row="2">
+            <TextBlock x:Name="Header" Margin="0,0,0,0" TextWrapping="Wrap" Text="Today's Activities" FontSize="21.333" FontWeight="ExtraBold" FontFamily="Segoe UI Historic"/>
+            <CheckBox x:Name="MealCheckBox">
+                <StackPanel Orientation="Vertical" Tapped="MealTapped">
+                    <TextBlock x:Name="MealName" HorizontalAlignment="Right" Margin="0,0,0,0" TextWrapping="Wrap" Text="{Binding}" VerticalAlignment="Top" FontFamily="Segoe UI Historic"/>
+                    <Image x:Name="MealImage" Height="100" Width="100" Margin="0,0,0,0" Source="{Binding}"/>
+                </StackPanel>
+            </CheckBox>
+            <CheckBox x:Name="WorkoutCheckBox">
+                <StackPanel Orientation="Vertical" Tapped="WorkoutTapped">
+                    <TextBlock x:Name="WorkoutName" HorizontalAlignment="Right" Margin="0,0,0,0" TextWrapping="Wrap" Text="{Binding}" VerticalAlignment="Top" FontFamily="Segoe UI Historic"/>
+                    <Image x:Name="WorkoutImage" Height="100" Width="100" Margin="0,0,0,0" Source="{Binding}"/>
+                </StackPanel>
+            </CheckBox>
+        </ListView>
+        
+        <!--ingredients-->
+        <TextBlock Grid.Row="3" x:Name="GroceryHeader" TextWrapping="Wrap" Text="Shopping List" FontSize="21.333" FontWeight="ExtraBold" FontFamily="Segoe UI Historic"/>
+        <ListView Grid.Row="4" x:Name="IngredientsList">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock x:Name="IngredientsTextBlock" Margin="0,0,0,0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding}" FontFamily="Segoe UI Historic"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
     </Grid>
 </Page>

@@ -35,12 +35,28 @@ namespace LifeFitApp.Views
         {
             controller = new WeeklyController(e.Parameter);
             this.InitListsView();
+            this.ResizeCalendar();
         }
 
         private void InitListsView()
         {
             Title.DataContext = controller.name;
-            ShowNextAcitivty();
+            WorkoutName.DataContext = controller.exercise.name;
+            WorkoutImage.DataContext = controller.exercise.imageFixedThumbPath;
+
+            MealName.DataContext = controller.meal.name;
+            MealImage.DataContext = controller.meal.imageFixedThumbPath;
+
+            IngredientsList.ItemsSource = controller.meal.ingredientsList;
+            //ShowNextAcitivty();
+        }
+
+        private void ResizeCalendar()
+        {
+            var bounds = Window.Current.Bounds;
+            double width = bounds.Width;
+
+            FakeCalendar.Width = bounds.Width;
         }
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
@@ -48,11 +64,21 @@ namespace LifeFitApp.Views
             this.ShowNextAcitivty();
         }
 
+        private void MealChecked(object sender, RoutedEventArgs e)
+        {
+            this.ShowNextAcitivty();
+        }
+
+        private void WorkoutChecked(object sender, RoutedEventArgs e)
+        {
+            this.ShowNextAcitivty();
+        }
+
         private void ShowNextAcitivty()
         {
             controller.UpdateActivity();
-            ActivityName.DataContext = controller.activityName;
-            ActivityImage.DataContext = controller.activityImage;
+            //ActivityName.DataContext = controller.activityName;
+            //ActivityImage.DataContext = controller.activityImage;
         }
 
         private void BackTapped(object sender, TappedRoutedEventArgs e)
@@ -63,8 +89,19 @@ namespace LifeFitApp.Views
             }
         }
 
+        private void MealTapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Views.MealView), controller.meal);
+        }
+
+        private void WorkoutTapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Views.MealView), controller.exercise);
+        }
+
         private void ActivityTapped(object sender, TappedRoutedEventArgs e)
         {
+
             FrameworkElement block = sender as FrameworkElement;
             object sendObj;
             bool isMeal = controller.IsObjectMeal(block.DataContext, out sendObj);
