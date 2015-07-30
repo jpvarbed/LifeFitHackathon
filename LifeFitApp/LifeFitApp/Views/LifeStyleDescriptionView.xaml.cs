@@ -39,14 +39,29 @@ namespace LifeFitApp.Views
 
         private void InitListsView()
         {
-            LifeListTitleBox.DataContext = controller;
             followersTextBlock.DataContext = controller;
             mainImage.DataContext = controller;
+            workoutTimeTextBlock.DataContext = controller;
+            mealTimeTextBlock.DataContext = controller;
+
+            Title.DataContext = controller;
             listDescription.DataContext = controller;
             MealsList.ItemsSource = controller.mealPlan.meals;
             WorkoutsList.ItemsSource = controller.exercisePlan.exercises;
-            workoutTimeTextBlock.DataContext = controller;
-            mealTimeTextBlock.DataContext = controller;
+
+            this.ResizeLists();
+        }
+
+        private void ResizeLists()
+        {
+            var bounds = Window.Current.Bounds;
+            double height = bounds.Height;
+            double width = bounds.Width;
+
+            MealsList.Width = width;
+            WorkoutsList.Width = width;
+            summaryList.Width = width;
+            listDescription.Width = width;
         }
 
         private void BackTapped(object sender, TappedRoutedEventArgs e)
