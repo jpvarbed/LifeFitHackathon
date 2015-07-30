@@ -71,6 +71,11 @@ namespace LifeFitApp.Views
             }
         }
 
+        private void EngageTapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Views.WeeklyView), controller.list);
+        }
+
         private void MealTapped(object sender, TappedRoutedEventArgs e)
         {
             FrameworkElement block = sender as FrameworkElement;

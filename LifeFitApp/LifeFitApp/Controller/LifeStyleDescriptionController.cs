@@ -29,6 +29,7 @@ namespace LifeFitApp.Controller
             mealDuration = "Cooking Time   " + list.mealDuration;
             workoutDuration = "Workout Time   " + list.exerciseDuration;
         }
-        private LifeList list;
+        // TODO this shouldnt be public
+        public LifeList list;
     }
 }

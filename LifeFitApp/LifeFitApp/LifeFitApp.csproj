@@ -100,7 +100,11 @@
     <Compile Include="Controller\LifeStyleListController.cs" />
     <Compile Include="Controller\MainPageController.cs" />
     <Compile Include="Controller\MealController.cs" />
+    <Compile Include="Controller\WeeklyController.cs" />
     <Compile Include="Model\Model.cs" />
+    <Compile Include="Views\WeeklyView.xaml.cs">
+      <DependentUpon>WeeklyView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -181,6 +185,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Views\WeeklyView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
