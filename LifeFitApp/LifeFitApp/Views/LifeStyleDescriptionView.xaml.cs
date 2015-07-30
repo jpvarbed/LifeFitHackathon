@@ -61,6 +61,7 @@ namespace LifeFitApp.Views
             MealsList.Width = width;
             WorkoutsList.Width = width;
             summaryList.Width = width;
+            listDescription.Width = width;
         }
 
         private void BackTapped(object sender, TappedRoutedEventArgs e)

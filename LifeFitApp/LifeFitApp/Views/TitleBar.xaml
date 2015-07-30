@@ -25,12 +25,12 @@
             <Button x:Name="BackButton" Grid.Column="0" Height="32" Margin="10,27,0,0" VerticalAlignment="Top" Width="36" d:LayoutOverrides="LeftMargin, RightMargin">
                 <Image Source="ms-appx:///Assets/hamburger.png"/>
             </Button>
-            <TextBlock x:Name="TitleBlock" Grid.Column="1" Text="{Binding ElementName=root, Path=title}" Height="47" Margin="0,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Center" FontFamily="Nirmala UI Semilight" FontSize="24">
-        	    <Run FontFamily="Nirmala UI Semilight" Text="Life Style Title"/>
+            <TextBlock x:Name="TitleBlock" Grid.Column="1" Text="{Binding ElementName=root, Path=title}" Height="47" Margin="0,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Center" FontFamily="Segoe UI Historic" FontSize="24">
+        	    <Run FontFamily="Segoe UI Historic" Text="Life Style Title"/>
         	    <LineBreak/>
-        	    <Run FontFamily="Nirmala UI Semilight"/>
+        	    <Run FontFamily="Segoe UI Historic"/>
         	    <LineBreak/>
-        	    <Run FontFamily="Nirmala UI Semilight"/>
+        	    <Run FontFamily="Segoe UI Historic"/>
             </TextBlock>
         </Grid>
     </Grid>
