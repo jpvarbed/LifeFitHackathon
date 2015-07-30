@@ -135,6 +135,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\data.xml" />
+    <Content Include="Assets\FitListAppIcon.png" />
     <Content Include="Assets\hamburger.png" />
     <Content Include="Assets\images\lifelists\BeachBabe.jpg" />
     <Content Include="Assets\images\lifelists\BeachBabe_thumb.jpg" />

@@ -31,7 +31,7 @@ namespace LifeFitApp.Views
             get { return (string)GetValue(titleProperty); }
             set {
                 SetValueDp(titleProperty, value);
-                ChromeBox.Height = TitleBox.Height;
+                //ChromeBox.Height = TitleBox.Height;
             }
         }
 

@@ -41,6 +41,11 @@ namespace LifeFitApp
             mainPageController.UpdateModel();
         }
 
+        private void ItemTapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Views.LifeStyleGenreView));
+        }
+
         private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Views.LifeStyleGenreView));

@@ -8,8 +8,11 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel Grid.Row="1">
-            <HyperlinkButton Content="Browse Genre" Click="HyperlinkButton_Click"/>
+        <StackPanel>
+            <Image Source="ms-appx:///Assets/FitListAppIcon.png" Tapped="ItemTapped"/>
+            <TextBlock  HorizontalAlignment="Center" FontFamily="Segoe UI Historic" FontSize="48">
+                <Run Text="Fit" FontWeight="ExtraBold"/><Run Text="List" FontWeight="ExtraLight"/>
+            </TextBlock>
         </StackPanel>
     </Grid>
 </Page>
