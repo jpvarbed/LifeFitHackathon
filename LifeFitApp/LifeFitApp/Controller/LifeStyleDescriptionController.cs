@@ -24,11 +24,10 @@ namespace LifeFitApp.Controller
             mealPlan = list.mealPlan;
             exercisePlan = list.exercisePlan;
             title = list.name;
-            followers = "Followers " + list.followers;
             imageFixedPath = list.imageFixedPath;
             description = list.description;
-            mealDuration = list.mealDuration;
-            workoutDuration = list.exerciseDuration;
+            mealDuration = "Cooking Time   " + list.mealDuration;
+            workoutDuration = "Workout Time   " + list.exerciseDuration;
         }
         private LifeList list;
     }

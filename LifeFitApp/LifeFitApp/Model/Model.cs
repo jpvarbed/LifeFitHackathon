@@ -253,7 +253,9 @@ namespace LifeFitApp.Model
         public string description { get; set; } = "description";
         public string imageMain = "images/lifelists/pinocchio.jpg";
         public string imageFixedPath { get; set; }
-        public string imageThumb;
+        public string imageThumb = "images/lifelists/pinocchio.jpg";
+
+        public string imageFixedThumbPath { get; set; }
         public virtual void ParseOtherData(string readerName, XmlReader reader) { }
 
         public virtual void Initialize() { }
@@ -299,7 +301,11 @@ namespace LifeFitApp.Model
                                 this.imageFixedPath = GetImageAssetPath(this.imageMain);
                                 break;
                             case "imageThumbnail":
-                                this.imageThumb = reader.Value;
+                                if (reader.Value != "PATH")
+                                {
+                                    this.imageThumb = reader.Value;
+                                }
+                                this.imageFixedThumbPath = GetImageAssetPath(this.imageThumb);
                                 break;
                             case "description":
                                 this.description = reader.Value;

@@ -8,22 +8,8 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Rectangle Fill="#FFF4F4F5" Height="77" Stroke="Black" VerticalAlignment="Top" Margin="0,-2,0,0" d:LayoutOverrides="LeftMargin, RightMargin"/>
-        <TextBlock x:ConnectionId='1' x:Name="GenreTitleBox" Height="47" Margin="65,24,70,0" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Segoe UI Historic" FontSize="32">
-        	<Run FontFamily="Nirmala UI Semilight" Text="LifeStyles"/>
-        	<LineBreak/>
-        	<Run FontFamily="Nirmala UI Semilight" Text=" "/>
-        	<LineBreak/>
-        	<Run FontFamily="Nirmala UI Semilight"/>
-        	<LineBreak/>
-        	<Run/>
-        	<LineBreak/>
-        	<Run/>
-        </TextBlock>
-        <Button x:ConnectionId='2' x:Name="BackButton" Height="32" Margin="10,27,0,0" VerticalAlignment="Top" Width="36" d:LayoutOverrides="LeftMargin, RightMargin">
-            <Image Source="ms-appx:///Assets/hamburger.png"/>
-        </Button>
-        <GridView x:ConnectionId='3' x:Name="genreList" Margin="10,80,10,10" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition">
+        <local:TitleBar x:ConnectionId='1' Grid.Row="0" Margin="0,-19,0,0" x:Name="Title" title="FitList"/>
+        <GridView x:ConnectionId='2' x:Name="genreList" Margin="10,80,10,10" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition">
             <GridView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <ItemsWrapGrid Orientation="Horizontal" MaximumRowsOrColumns="2" HorizontalAlignment="Center"/>
@@ -36,8 +22,8 @@
                             <RowDefinition Height="*" />
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
-                        <Image x:ConnectionId='4' Grid.Row="0" Source="{Binding imageFixedPath}"                    />
-                        <TextBlock x:ConnectionId='5' Grid.Row="1" HorizontalAlignment="Center" Text="{Binding name}"                    />
+                        <Image x:ConnectionId='3' Grid.Row="0" Source="{Binding imageFixedPath}"                    />
+                        <TextBlock x:ConnectionId='4' Grid.Row="1" HorizontalAlignment="Center" Text="{Binding name}"                    />
                     </Grid>
                 </DataTemplate>
             </GridView.ItemTemplate>

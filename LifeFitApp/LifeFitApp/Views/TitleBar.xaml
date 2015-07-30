@@ -10,14 +10,14 @@
     >
     
     <Grid>
-        <Rectangle Fill="#FFF4F4F5" Height="77" Stroke="Black" VerticalAlignment="Top" Margin="0,-2,0,0" d:LayoutOverrides="LeftMargin, RightMargin">
+        <Rectangle x:Name="ChromeBox" Fill="#FFF4F4F5" Height="77" Stroke="Black" VerticalAlignment="Top" Margin="0,-2,0,0" d:LayoutOverrides="LeftMargin, RightMargin">
             <FlyoutBase.AttachedFlyout>
                 <MenuFlyout/>
             </FlyoutBase.AttachedFlyout>
         </Rectangle>
         <!--<TextBlock x:Name="TitleBlock" Text="{Binding ElementName=root, Path=title}" Height="47" Margin="65,24,70,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Nirmala UI Semilight" FontSize="32">
         </TextBlock>-->
-        <Grid>
+        <Grid x:Name="TitleBox">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="48"/>
                 <ColumnDefinition/>
@@ -25,7 +25,7 @@
             <Button x:Name="BackButton" Grid.Column="0" Height="32" Margin="10,27,0,0" VerticalAlignment="Top" Width="36" d:LayoutOverrides="LeftMargin, RightMargin">
                 <Image Source="ms-appx:///Assets/hamburger.png"/>
             </Button>
-            <TextBlock x:Name="TitleBlock" Grid.Column="1" Text="{Binding ElementName=root, Path=title}" Height="47" Margin="0,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Center" FontFamily="Segoe UI Historic" FontSize="24">
+            <TextBlock x:Name="TitleBlock" Grid.Column="1" Text="{Binding ElementName=root, Path=title}" Margin="0,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Center" FontFamily="Segoe UI Historic" FontSize="32">
         	    <Run FontFamily="Segoe UI Historic" Text="Life Style Title"/>
         	    <LineBreak/>
         	    <Run FontFamily="Segoe UI Historic"/>
