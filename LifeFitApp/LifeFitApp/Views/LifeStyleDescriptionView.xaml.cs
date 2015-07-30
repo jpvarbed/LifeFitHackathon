@@ -39,7 +39,6 @@ namespace LifeFitApp.Views
 
         private void InitListsView()
         {
-            followersTextBlock.DataContext = controller;
             mainImage.DataContext = controller;
             workoutTimeTextBlock.DataContext = controller;
             mealTimeTextBlock.DataContext = controller;

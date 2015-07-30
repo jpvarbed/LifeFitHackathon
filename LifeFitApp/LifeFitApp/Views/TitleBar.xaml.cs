@@ -29,7 +29,10 @@ namespace LifeFitApp.Views
         public string title
         {
             get { return (string)GetValue(titleProperty); }
-            set { SetValueDp(titleProperty, value);  }
+            set {
+                SetValueDp(titleProperty, value);
+                //ChromeBox.Height = TitleBox.Height;
+            }
         }
 
         public static readonly DependencyProperty titleProperty =

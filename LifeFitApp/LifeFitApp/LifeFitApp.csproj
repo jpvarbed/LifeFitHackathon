@@ -129,15 +129,31 @@
     </AppxManifest>
     <None Include="app.config" />
     <None Include="ApplicationInsights.config" />
+    <None Include="Assets\images\lifelists\Thumbs.db" />
     <None Include="LifeFitApp_TemporaryKey.pfx" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\data.xml" />
+    <Content Include="Assets\FitListAppIcon.png" />
     <Content Include="Assets\hamburger.png" />
+    <Content Include="Assets\images\lifelists\BeachBabe.jpg" />
+    <Content Include="Assets\images\lifelists\BeachBabe_thumb.jpg" />
+    <Content Include="Assets\images\lifelists\bridesmaids.jpg" />
+    <Content Include="Assets\images\lifelists\bridesmaids_thumb.jpg" />
     <Content Include="Assets\images\lifelists\dunklikedennis.jpg" />
+    <Content Include="Assets\images\lifelists\dunklikedennis_thumb.jpg" />
+    <Content Include="Assets\images\lifelists\GlowingSkin.jpg" />
+    <Content Include="Assets\images\lifelists\GlowingSkin_thumb.jpg" />
+    <Content Include="Assets\images\lifelists\KimsBunsandThighs.jpg" />
+    <Content Include="Assets\images\lifelists\KimsBunsandThighs_thumb.jpg" />
+    <Content Include="Assets\images\lifelists\LeanCleanGreen.jpg" />
+    <Content Include="Assets\images\lifelists\LeanCleanGreen_thumb.jpg" />
     <Content Include="Assets\images\lifelists\pinocchio.jpg" />
     <Content Include="Assets\images\lifelists\runforestrun.jpg" />
+    <Content Include="Assets\images\lifelists\runforestrun_thumb.jpg" />
+    <Content Include="Assets\images\lifelists\Triathalon.jpg" />
+    <Content Include="Assets\images\lifelists\Triathalon_thumb.jpg" />
     <Content Include="Assets\images\lifestyles\athlete.jpg" />
     <Content Include="Assets\images\lifestyles\beach.jpg" />
     <Content Include="Assets\images\lifestyles\crossfit.jpg" />

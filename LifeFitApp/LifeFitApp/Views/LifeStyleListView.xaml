@@ -27,13 +27,17 @@
             </GridView.ItemsPanel>
             <GridView.ItemTemplate>
                 <DataTemplate>
-                    <Grid MaxHeight="200" Width="125">
+                    <Grid Height="125" Width="125">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*" />
-                            <RowDefinition Height="*" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
                         </Grid.RowDefinitions>
-                        <Image Grid.Row="0" Source="{Binding imageFixedPath}" Tapped="ItemTapped"/>
-                        <TextBlock Grid.Row="1" HorizontalAlignment="Center" Text="{Binding name}" Tapped="ItemTapped"/>
+                        <Image Grid.Row="0" Source="{Binding imageFixedThumbPath}" Tapped="ItemTapped"/>
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="{Binding name}" Tapped="ItemTapped"/>
+                        <!--<TextBlock Grid.Row="2" x:Name="followersTextBlock" Margin="25,0,0,0" TextWrapping="Wrap" FontFamily="Segoe UI Historic">
+                            <Run Text="{Binding followers}"/> Followers
+                        </TextBlock>-->
                     </Grid>
                 </DataTemplate>
             </GridView.ItemTemplate>
