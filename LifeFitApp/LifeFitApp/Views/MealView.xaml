@@ -7,7 +7,38 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <local:TitleBar Grid.Row="0" Margin="0,-19,0,0" x:Name="Title" Tapped="BackTapped" title="{Binding title}"/>
+        <ScrollViewer Grid.Row="1" Margin="0,0,0,0">
+            <ListView ScrollViewer.VerticalScrollMode="Enabled" Margin="0,10,0,0">
+                <!--mainImage-->
+                <StackPanel Margin="0,0,0,0">
+                    <Image x:Name="mainImage" Margin="0,0,0,0" Source="{Binding imageFixedPath}"/>
+                    <TextBlock x:Name="listDescription" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding description}" VerticalAlignment="Bottom" FontSize="21.333" FontFamily="Segoe UI Historic"/>
+                </StackPanel>
 
+                <!--ingredients-->
+                <ListView x:Name="IngredientsList" Margin="-20,0,0,0">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock x:Name="IngredientsTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding}" FontSize="21.333" FontFamily="Segoe UI Historic"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <!--instructions-->
+                <ListView x:Name="InstructionsList" Margin="-20,0,0,0">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock x:Name="InstructionsTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding}" FontSize="21.333" FontFamily="Segoe UI Historic"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ListView>
+        </ScrollViewer>
     </Grid>
 </Page>
