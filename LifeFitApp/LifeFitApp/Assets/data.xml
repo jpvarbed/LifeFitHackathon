@@ -78,7 +78,7 @@
 			<imageThumbnail>images\lifelists\LeanCleanGreen_thumb.jpg</imageThumbnail>
 			<followers>56400</followers>
 			<meals>M1;M4;M3</meals>
-			<exercise>W1;W3;</exercise>
+			<exercise>W1;W3;W4</exercise>
 			<description>Think leans protein and lots of veggies.</description>
 		</Lifelist>
 		<Lifelist>
@@ -90,7 +90,7 @@
 			<imageThumbnail>images\lifelists\Triathalon_thumb.jpg</imageThumbnail>
 			<followers>29645</followers>
 			<meals>M1;M4;M2</meals>
-			<exercise>W1;W2;W2</exercise>
+			<exercise>W4;W2;W2</exercise>
 			<description>Swin, bike and run for the win. Focus on protein and carbohydrates to fuel your workouts.</description>
 		</Lifelist>
 		<Lifelist>
@@ -102,7 +102,7 @@
 			<imageThumbnail>images\lifelists\BeachBabe_thumb.jpg</imageThumbnail>
 			<followers>623098</followers>
 			<meals>M1;M4;M2</meals>
-			<exercise>W3;W2;W1</exercise>
+			<exercise>W4;W2;W1</exercise>
 			<description>Live near a beach? This list is for you.</description>
 		</Lifelist>
 		<Lifelist>
@@ -114,7 +114,7 @@
 			<imageThumbnail>images\lifelists\GlowingSkin_thumb.jpg</imageThumbnail>
 			<followers>56400</followers>
 			<meals>M1;M4;M2</meals>
-			<exercise>W1;W3;</exercise>
+			<exercise>W1;W3;W2</exercise>
 			<description>Drink lots of water and focus on skin improving foods.</description>
 		</Lifelist>
 		<Lifelist>
@@ -126,7 +126,7 @@
 			<imageThumbnail>images\lifelists\KimsBunsandThighs_thumb.jpg</imageThumbnail>
 			<followers>29645</followers>
 			<meals>M1;M4;M2</meals>
-			<exercise>W1;W2;W2</exercise>
+			<exercise>W3;W2;W2</exercise>
 			<description>Train like Kim Kardashian! Deadlifts and Avocados galore!</description>
 		</Lifelist>
 	</section2>
@@ -140,7 +140,7 @@
 			<imageMain>images\meals\tunacakes.jpg</imageMain>
 			<mealTime>20</mealTime>
 			<instructions>Step 1:  Drain the tuna and mix the tuna and egg together in a bowl; Step 2: Chop up the green onion and mix in the tuna; Step 3:  Add coconut oil to a pan on medium-high heat.    Smush the tuna into a flat cake like size and once the oil is hot cook; Step 4: After 3 minutes or once the bottom is fairly brown, flip the tuna cake and cook for 3 more minutes</instructions>
-			<imageThumbnail>PATH</imageThumbnail>
+			<imageThumbnail>images\meals\tunacakes_thumb.jpg</imageThumbnail>
 			<dietaryRestrictions>GF; P;</dietaryRestrictions>
 			<fat>100</fat>
 			<carbs>0</carbs>
@@ -163,7 +163,7 @@
     Serve with toasted bread, on crackers, wraps, or on top of a basic leafy green salad. 
 Tip: If you’d like a soy-free version of this salad, be sure to use soy-free vegan mayonnaise. Veganaise makes a great soy-free version.
 </instructions>
-			<imageThumbnail>PATH</imageThumbnail>
+			<imageThumbnail>images\meals\chickpeasalad_thumb.png</imageThumbnail>
 			<dietaryRestrictions>GF;Vegan;</dietaryRestrictions>
 			<fat>100</fat>
 			<carbs>200</carbs>
@@ -212,7 +212,7 @@ Step 3: Stir in chicken stock and almond butter, scraping pot to loosen any brow
 Add the apricots and baby carrots to the slow cooker, cover and cook an additional hour.;
 Step 4: Meanwhile, prepare the cauliflower “couscous.” Grate cauliflower by running the florets through a food processor with a grating attachment or use a box grater to create rice-like pieces. Pick out any large fragments that didn’t get shredded and save for another use. Heat olive oil in a skillet over medium heat. Sauté the onions and garlic for 2 minutes, then add the cauliflower, salt and pepper. Sauté for 8 to 10 minutes, until the cauliflower is tender. Stir in the cherries, basil, cilantro and lemon zest.;
 Step 5: Garnish the chicken with toasted, sliced almonds and fresh cilantro. Serve over cauliflower couscous.</instructions>
-			<imageThumbnail>PATH</imageThumbnail>
+			<imageThumbnail>images\meals\moroccanchicken_thumb.jpg</imageThumbnail>
 			<dietaryRestrictions>GF</dietaryRestrictions>
 			<fat>90</fat>
 			<carbs>30</carbs>
@@ -222,7 +222,7 @@ Step 5: Garnish the chicken with toasted, sliced almonds and fresh cilantro. Ser
 		<meal>
 			<ID>M4</ID>
 			<name>Mexican Eggs Benedict</name>
-			<description/>
+			<description>Eggs benedict with avocado.</description>
 			<ingredients>2 dried chipotle chilies; 3 large egg yolks;2 tsp lime juice;2/3 cup salted clarified butter or ghee, melted;8 large eggs, poached;1 Tbsp extra-virgin olive oil;8 cups baby spinach;1 avocado slices;fresh cilantro</ingredients>
 			<percentLike>94</percentLike>
 			<imageMain>images\meals\mexicaneggsbenedict.jpg</imageMain>
@@ -230,7 +230,7 @@ Step 5: Garnish the chicken with toasted, sliced almonds and fresh cilantro. Ser
 			<instructions>To make the sauce: Soak the chilies in boiling water for 15 minutes, until softened. Remove the seeds for a more mild sauce, or leave them in for a spicy sauce.  Add the chilies to a blender with the egg yolks and lime juice. Blend until smooth. With the blender running on medium-speed, slowly drizzle in the melted clarified butter or ghee. If sauce separates or is too thick, whisk in a teaspoon of water at a time until it reaches desired consistency.  The sauce can now be stored in the refrigerator for up to 3 days and gently reheated over a double boiler.
 Melt the bacon fat in a skillet over medium-high heat and add the spinach. Cook for 2 to 3 minutes, or until it is wilted, then season with salt and pepper to taste. Divide the spinach between 4 plates and top with 2 poached eggs and a drizzle of the Chipotle Hollandaise Sauce.
 Serve with avocado, fried plantains, cilantro,</instructions>
-			<imageThumbnail>PATH</imageThumbnail>
+			<imageThumbnail>images\meals\mexicaneggsbenedict_thumb.jpg</imageThumbnail>
 			<dietaryRestrictions>GF; V;</dietaryRestrictions>
 			<fat>200</fat>
 			<carbs>0</carbs>
@@ -242,46 +242,46 @@ Serve with avocado, fried plantains, cilantro,</instructions>
 		<workout>
 			<ID>W1</ID>
 			<name>5K Run</name>
-			<description>Run your ass off</description>
+			<description>The 5K run is staple for every runners arsenal.  After you've mastered the 5K you'll work towards a 10K.</description>
 			<type>Aerobic</type>
 			<percentLike>0.1</percentLike>
 			<exerciseTime>30</exerciseTime>
 			<instructions>Run!</instructions>
-			<imageMain>images\workouts\Aerobic_exercise.jpg</imageMain>
-			<imageThumbnail>PATH</imageThumbnail>
+			<imageMain>images\workouts\5krun.jpg</imageMain>
+			<imageThumbnail>images\workouts\5krun_thumb.jpg</imageThumbnail>
 		</workout>
 		<workout>
 			<ID>W2</ID>
 			<name>Yoga like a pro</name>
-			<description>Sweat out that water weight</description>
+			<description>Stretch your muscles and calm your breathing to develop better body-mind awareness.</description>
 			<type>Weight control</type>
 			<percentLike>0.9</percentLike>
 			<exerciseTime>60</exerciseTime>
 			<instructions>Power Yoga</instructions>
 			<imageMain>images\workouts\yoga.jpg</imageMain>
-			<imageThumbnail>PATH</imageThumbnail>
+			<imageThumbnail>images\workouts\yoga_thumb.jpg</imageThumbnail>
 		</workout>
 		<workout>
 			<ID>W3</ID>
-			<name>Cum on man</name>
-			<description>What do you think</description>
+			<name>Squats</name>
+			<description>Squating down from standing to build up your quad muscles</description>
 			<type>Anaerobic</type>
 			<percentLike>0.8</percentLike>
-			<exerciseTime>90</exerciseTime>
-			<instructions>Jerking off</instructions>
-			<imageMain>images\workouts\wink.jpg</imageMain>
-			<imageThumbnail>PATH</imageThumbnail>
+			<exerciseTime>15</exerciseTime>
+			<instructions>Start standing; Then squat down so that you are low enough that your thighs are paralell with the ground; Hold for a count of ten seconds; stand up and repeat until you've done twenty squats</instructions>
+			<imageMain>images\workouts\squats.jpg</imageMain>
+			<imageThumbnail>images\workouts\squats_thumb.jpg</imageThumbnail>
 		</workout>
 		<workout>
 			<ID>W4</ID>
-			<name/>
-			<description/>
-			<type/>
-			<percentLike/>
-			<exerciseTime/>
-			<instructions/>
-			<imageMain/>
-			<imageThumbnail>PATH</imageThumbnail>
+			<name>Deadlifts</name>
+			<description>Squats with wiegh to build up your leg muscles and sholders.</description>
+			<type>Lifting</type>
+			<percentLike>0.5</percentLike>
+			<exerciseTime>45</exerciseTime>
+			<instructions>You should be at a gym with a wide variety of weightlifting equipment;</instructions>
+			<imageMain>images\workouts\deadlifts.jpg</imageMain>
+			<imageThumbnail>images\workouts\deadlifts_thumb.jpg</imageThumbnail>
 		</workout>
 	</section4>
 </lifestylesDB>
