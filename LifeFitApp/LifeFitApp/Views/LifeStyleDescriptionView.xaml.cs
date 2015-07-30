@@ -71,8 +71,16 @@ namespace LifeFitApp.Views
             }
         }
 
-        private void ItemTapped(object sender, TappedRoutedEventArgs e)
+        private void MealTapped(object sender, TappedRoutedEventArgs e)
         {
+            FrameworkElement block = sender as FrameworkElement;
+            this.Frame.Navigate(typeof(Views.MealView), block.DataContext);
+        }
+
+        private void WorkoutTapped(object sender, TappedRoutedEventArgs e)
+        {
+            FrameworkElement block = sender as FrameworkElement;
+            this.Frame.Navigate(typeof(Views.WorkoutView), block.DataContext);
         }
     }
 }

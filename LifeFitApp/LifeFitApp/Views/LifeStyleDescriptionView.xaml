@@ -42,7 +42,7 @@
                         </GridView.ItemsPanel>
                         <GridView.ItemTemplate>
                             <DataTemplate>
-                                <Image Source="{Binding imageFixedPath}" Tapped="ItemTapped" Height="100" Width="100"/>
+                                <Image Source="{Binding imageFixedPath}" Tapped="MealTapped" Height="100" Width="100"/>
                             </DataTemplate>
                         </GridView.ItemTemplate>
                     </GridView>
@@ -55,7 +55,7 @@
                         </GridView.ItemsPanel>
                         <GridView.ItemTemplate>
                             <DataTemplate>
-                                <Image Source="{Binding imageFixedPath}" Tapped="ItemTapped" Height="100" Width="100"/>
+                                <Image Source="{Binding imageFixedPath}" Tapped="WorkoutTapped" Height="100" Width="100"/>
                             </DataTemplate>
                         </GridView.ItemTemplate>
                     </GridView>

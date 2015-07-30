@@ -99,6 +99,7 @@
     <Compile Include="Controller\LifeStyleGenreController.cs" />
     <Compile Include="Controller\LifeStyleListController.cs" />
     <Compile Include="Controller\MainPageController.cs" />
+    <Compile Include="Controller\MealController.cs" />
     <Compile Include="Model\Model.cs" />
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>

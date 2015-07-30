@@ -174,6 +174,12 @@ namespace LifeFitApp.Model
             this.typeName = name;
             ParseData(name, reader);
         }
+ 
+        override public void Initialize()
+        {
+            ingredientsList = ParseHelper.ParseList(ingredients);
+            instructionsList = ParseHelper.ParseList(instructions);
+        }
     }
 
     public class Exercise : ActivityItem
@@ -184,6 +190,11 @@ namespace LifeFitApp.Model
         {
             this.typeName = name;
             ParseData(name, reader);
+        }
+
+        override public void Initialize()
+        {
+            instructionsList = ParseHelper.ParseList(instructions);
         }
     }
 
@@ -196,13 +207,15 @@ namespace LifeFitApp.Model
     {
         public double percentLike { get; set; } = 20;
         public string duration { get; set; } = "20 minutes";
-        public string steps { get; set; } = "Do yoga";
+        public string instructions = "Do yoga";
+        public List<string> instructionsList { get; set; }
 
         // hack
         public string fat { get; set; } = "50mg";
         public string carbs { get; set; } = "2000g";
         public string protein { get; set; } = "30g";
         public string ingredients { get; set; } = "300 ants";
+        public List<string> ingredientsList { get; set; }
 
         // exercise hack
         public string exerciseType { get; set; } = "cardio";
@@ -223,6 +236,9 @@ namespace LifeFitApp.Model
                     break;
                 case "ingredients":
                     this.ingredients = reader.Value;
+                    break;
+                case "instructions":
+                    this.instructions = reader.Value;
                     break;
                 case "mealTime":
                 case "exerciseTime":
