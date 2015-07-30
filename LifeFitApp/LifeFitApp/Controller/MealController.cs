@@ -7,22 +7,30 @@ using LifeFitApp.Model;
 
 namespace LifeFitApp.Controller
 {
-    class MealController
+    public class ActivityItemController
     {
         public string title { get; set; }
         public List<string> ingredients { get; set; }
         public List<string> instructions { get; set; }
         public string imageFixedPath { get; set; }
         public string description { get; set; }
-        public MealController(object obj)
+        public ActivityItemController(object obj)
         {
-            meal = obj as Meal;
-            title = meal.name;
-            ingredients = meal.ingredientsList;
-            instructions = meal.instructionsList;
-            imageFixedPath = meal.imageFixedPath;
-            description = meal.description;
+            activity = obj as ActivityItem;
+            title = activity.name;
+            ingredients = activity.ingredientsList;
+            instructions = activity.instructionsList;
+            imageFixedPath = activity.imageFixedPath;
+            description = activity.description;
         }
-        private Meal meal;
+
+        protected ActivityItem activity;
+    }
+
+    class MealController : ActivityItemController
+    {
+        public MealController(object obj) : base(obj)
+        {
+        }
     }
 }

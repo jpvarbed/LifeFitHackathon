@@ -80,7 +80,7 @@ namespace LifeFitApp.Views
         private void WorkoutTapped(object sender, TappedRoutedEventArgs e)
         {
             FrameworkElement block = sender as FrameworkElement;
-            this.Frame.Navigate(typeof(Views.WorkoutView), block.DataContext);
+            this.Frame.Navigate(typeof(Views.MealView), block.DataContext);
         }
     }
 }
