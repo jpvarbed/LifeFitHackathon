@@ -43,5 +43,13 @@ namespace LifeFitApp.Views
             FrameworkElement block = sender as FrameworkElement;
             this.Frame.Navigate(typeof(Views.LifeStyleListView), block.DataContext);
         }
+
+        private void BackTapped(object sender, TappedRoutedEventArgs e)
+        {
+            if (this.Frame.CanGoBack)
+            {
+                this.Frame.GoBack();
+            }
+        }
     }
 }

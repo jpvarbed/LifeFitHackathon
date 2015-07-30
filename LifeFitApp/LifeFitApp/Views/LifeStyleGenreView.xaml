@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <local:TitleBar Grid.Row="0" Margin="0,-19,0,0" x:Name="Title" title="FitList"/>
+        <local:TitleBar Grid.Row="0" Margin="0,-19,0,0" x:Name="Title" Tapped="BackTapped" title="FitList"/>
         <GridView x:Name="genreList" Margin="10,80,10,10" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition">
             <GridView.ItemsPanel>
                 <ItemsPanelTemplate>

@@ -9,7 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel>
-            <Image Source="ms-appx:///Assets/FitListAppIcon.png" Tapped="ItemTapped"/>
+            <Image x:Name="mainIcon" Source="ms-appx:///Assets/FitListAppIcon.png" Tapped="ItemTapped"/>
             <TextBlock  HorizontalAlignment="Center" FontFamily="Segoe UI Historic" FontSize="48">
                 <Run Text="Fit" FontWeight="ExtraBold"/><Run Text="List" FontWeight="ExtraLight"/>
             </TextBlock>

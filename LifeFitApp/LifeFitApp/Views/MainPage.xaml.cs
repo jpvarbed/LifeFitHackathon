@@ -27,13 +27,28 @@ namespace LifeFitApp
         public MainPage()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode =
+Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
             this.InitMainPage();
         }
 
         private void InitMainPage()
         {
             mainPageController = new MainPageController();
+            this.InitIcon();
+        }
 
+        private void InitIcon()
+        {
+            var bounds = Window.Current.Bounds;
+            double height = bounds.Height;
+            double width = bounds.Width;
+
+            mainIcon.Width = bounds.Width;
+            if (mainIcon.Height > bounds.Height)
+            {
+                mainIcon.Height = .75f * bounds.Height;
+            }
         }
 
         public void tapAction()
