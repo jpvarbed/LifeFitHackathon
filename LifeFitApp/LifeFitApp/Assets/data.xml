@@ -71,7 +71,7 @@
 		</Lifelist>
 		<Lifelist>
 			<ID>L3</ID>
-			<name>Lean, Clean and Green</name>
+			<name>Lean and Green</name>
 			<mealsTime>25 mins per day</mealsTime>
 			<workoutsTime>60 mins per day</workoutsTime>
 			<imageMain>images\lifelists\LeanCleanGreen.jpg</imageMain>
@@ -119,7 +119,7 @@
 		</Lifelist>
 		<Lifelist>
 			<ID>L7</ID>
-			<name>Kim's Buns and Thighs all Day</name>
+			<name>Kim's Day</name>
 			<mealsTime>25 mins per day</mealsTime>
 			<workoutsTime>60 mins per day</workoutsTime>
 			<imageMain>images\lifelists\KimsBunsandThighs.jpg</imageMain>
