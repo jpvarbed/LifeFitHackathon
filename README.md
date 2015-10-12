@@ -1,32 +1,11 @@
-# You've added your first ReadMe file!
-A README.md file is intended to quickly orient readers to what your project can do.  New to Markdown? [Learn more](http://go.microsoft.com/fwlink/p/?LinkId=524306&clcid=0x409)
+Changing your lifestyle is hard. Knowing the right combination of nutrition and exercise to get the most benefit of the change is even harder. Fitness trackers can tell you your current fitness level, but they cannot tell you what to eat or the best workouts for your fitness goals.
+"FitList" is an app that works together with the data from your fitness tracker, your favorite workout partners and nutrition gurus, experts and health nuts to deliver custom exercise and nutrition guidance in one seamless, easy to use package.
+When you sign up, FitList asks you questions about your lifestyle, connects to the services that you already use and recommends "FitLists" for you to follow. 
+A "Fitlist" includes curated meals and workouts, scheduled for a full week, removing the hassle of planning for you. When you "play" a FitList, the app displays a week view to get you started.
+The week view shows a grocery list so you can easily shop for the week or order via your favorite grocery delivery service. Additionally, the week view tells you which workouts to sign up for with your ClassPass or when to take a jog and attend CrossFit.
+Each day the app shows what meals and workouts are upcoming and reminds you to complete tasks so you don't miss a beat. It also tracks your progress for that Fitlist over the week.  The power behind FitList is its ability to recommend an exercise and nutrition regimen based on you and keep you on track by reminding you what to eat and do daily.
+FitList saves the time users previously needed to research and plan their meals and exercise for the week so they can stay laser focused on actually changing their lifestyle and achieving their fitness goals.
 
-## Edit this ReadMe and commit your change to a topic branch
-In Git, branches are cheap.  You should use them whenever you're making changes to your repository.  Edit this file by clicking on the edit icon.
-
-Then make some changes to this ReadMe file.
-
-Change 1
-
-When you are done, click the dropdown arrow next to the save button - that will allow you to commit your changes to a new branch.
-
-## Create a pull request to contribute your changes back into master
-Pull requests are the way to move changes from a topic branch back into the master branch.
-
-Click on the **Pull Requests** page in the **CODE** hub, then click "New Pull Request" to create a new pull request from your topic branch to the master branch.
-
-When you are done adding details, click "Create Pull request". Once a pull request is sent, reviewers can see your changes, recommend modifications, or even push follow-up commits.
-
-First time creating a pull request?  [Learn more](http://go.microsoft.com/fwlink/?LinkId=533211&clcid=0x409)
-
-### Congratulations! You've completed the grand tour of the CODE hub!
-
-# Next steps
-
-If you haven't done so yet:
-* [Install Visual Studio](http://go.microsoft.com/fwlink/?LinkId=309297&clcid=0x409&slcid=0x409)
-* [Install Git](http://git-scm.com/downloads)
-
-Then clone this repo to your local machine to get started with your own project.
-
-Happy coding!
+This is a project made for the Microsoft 2015 hackathon.
+Credit to:
+Aaron Brown, Kayce Hawkins Brown, Andy O'Donald, John Krzemien, Jason Varbedian
